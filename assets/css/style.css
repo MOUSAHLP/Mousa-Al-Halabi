@@ -502,17 +502,24 @@ nav ul .dropdown .dropdown-toggle{
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/mousa2.png) center no-repeat;
+  background: url(../img/mousa.png) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
   position: relative;
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
+}
+
+@media only screen and (max-width: 650px) {
+  .hero {
+    background-size: cover;
+  }
 }
 
 .background-overlay:before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 1))  ;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -2721,7 +2728,7 @@ display: inline-block;
 }
 
 .modal.fade-scale .modal-dialog {
-  margin-top: 50px;
+  margin-top: 30px;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -2735,6 +2742,12 @@ display: inline-block;
 
 .modal-header {
   height: 50vh;
+}
+
+@media (max-width : 450px) {
+  .modal-header {
+    height: 40vh;
+  }
 }
 
 .modal-header .rectangle {
@@ -2756,9 +2769,15 @@ display: inline-block;
   border-color: var(--mainColor);
 }
 .modal-body {
-  height: 40vh;
-  overflow-y: scroll;
+  height: 35vh;
+  overflow-y: auto;
 }
+@media (max-width : 450px) {
+  .modal-body {
+    height: 30vh;
+  }
+}
+
 
 .modal-header,
 .modal-footer {
@@ -2768,8 +2787,14 @@ display: inline-block;
 .modal-footer {
   border-top: 0;
   display: flex;
+  padding-top:10px;
 }
 
+@media (max-width : 450px) {
+  .modal-footer {
+   flex-wrap: wrap;
+  }
+}
 .modal-footer .btn.Github{
   background-color: #333;
   border-color: #333;
@@ -2807,8 +2832,13 @@ display: inline-block;
   padding: 0;
   border-radius: 0;
   border: 0;
+  min-width: 300px;
 }
-
+@media (max-width : 350px) {
+  .modal-content {
+    min-width: 250px;
+  }
+}
 .modal-content p {
   margin: 15px 0 0;
 }
@@ -2816,6 +2846,14 @@ display: inline-block;
 .modal-content .btn {
   width: 100%;
   border-width: 1px 0 0 0;
+  margin:0px!important;
+}
+@media (max-width : 450px) {
+
+  .modal-content .btn {
+    height: 35px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2830,6 +2868,11 @@ display: inline-block;
     top: -18px;
     height: 36px;
     width: 36px;
+  }
+}
+@media (max-width : 400px) {
+  .modal-dialog {
+    margin: 0px;
   }
 }
 
@@ -3025,4 +3068,86 @@ display: inline-block;
 
 .certificates .btn span{
   font-size: 70%;
+}
+/* certificates modal */
+.modal-dialog.certificates{
+  padding: 0px;
+  width: 85vw;
+  max-width: 700px;
+}
+.modal-dialog.certificates .modal-header{
+  height: 0px;
+}
+.modal-dialog.certificates .modal-body{
+  height: 70vh;
+}
+.modal-dialog.certificates .modal-title{
+  text-align: center;
+  color: var(--mainColor);
+}
+.modal-dialog.certificates .modal-header a{
+  z-index: 1;
+}
+.modal-dialog.certificates .certificates-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 2px solid var(--mainColor);
+  margin: auto;
+  max-width: 500px;
+}
+.modal-dialog.certificates .certificates-content .certificate{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+  margin: 10px 0px;
+}
+.modal-dialog.certificates .certificates-content .certificate::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--mainColor);
+  transform: rotate(45deg);
+  position: absolute;
+  left: -5px;
+  top: 15px;
+  background-color: white;
+}
+.modal-dialog.certificates .certificate-title{
+  font-size: 20px;
+}
+@media (max-width : 500px) {
+  .modal-dialog.certificates .certificate-title{
+    font-size: 17px;
+  }
+}
+.modal-dialog.certificates p{
+  color: #767676;
+  font-size: 14px;
+}
+@media (max-width : 500px) {
+  .modal-dialog.certificates p{
+    color: #767676;
+    font-size: 11px;
+  }
+}
+.modal-dialog.certificates .certificates-content .certificate .btn{
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+}
+@media (max-width : 500px) {
+  .modal-dialog.certificates .certificates-content .certificate .btn{
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+    min-height: 45px;
+  }
+  .modal-dialog.certificates .certificates-content .certificate .btn span{
+    font-size: 20%;
+  }
 }

@@ -89,13 +89,13 @@ let apps = {
 
 
 let imgInterval;
+let imgIntervalTimer = 2000;
 let youtubeBtn = document.querySelector(".modal-footer .btn.Youtube");
 let githubBtn = document.querySelector(".modal-footer .btn.Github");
 let websiteeBtn = document.querySelector(".modal-footer .btn.Website");
 
 let modal = document.querySelector(".modal.fade-scale");
 function showAppPage(appName) {
-  console.log(apps[appName]);
   let img = document.querySelector(".modal.fade-scale img");
   let title = document.querySelector(
     ".modal.fade-scale .modal-body .modal-title"
@@ -112,10 +112,19 @@ function showAppPage(appName) {
     } else {
       imgCount++;
     }
-  }, 2000);
+  }, imgIntervalTimer);
 
   title.innerHTML = apps[appName]["name"];
-  disc.innerHTML = apps[appName]["disc"];
+
+  let currLang = localStorage.getItem("currLang")??"en";
+  
+  if (currLang != "en"){
+    disc.innerHTML = apps[appName]["disc_de"];
+  }
+  else{
+    disc.innerHTML = apps[appName]["disc"];
+  }
+
 
   if (apps[appName]["youtube"] != null) {
     youtubeBtn.href = apps[appName]["youtube"];
@@ -141,7 +150,6 @@ function showAppPage(appName) {
   modal.classList.add("in");
 
   backgroundDiv.onclick = () => {
-    console.log("title");
 
     window.clearInterval(imgInterval);
     youtubeBtn.classList.remove("show");

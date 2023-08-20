@@ -695,13 +695,13 @@
                     >
                       certificate from udemy
                     </p>
-                    <a
-                      href="https://www.udemy.com/certificate/UC-36170205-8cee-4bdc-95bc-87225fb60a47/"
+                    <button
+                   onclick="showCertificates('Front-End')"
                       target="_blank"
                       class="rectangle btn"
                       ><span class="localization" data-local="Schau mal">
                         view
-                      </span></a
+                      </span></button
                     >
                   </span>
                 </div>
@@ -1772,13 +1772,13 @@
             <div class="row">
               <!-- Team Member -->
               <div class="col-md-3 col-xs-6">
-                <a href="https://issa-al-halabi.github.io/Issa-Al-Halabi/">
+                <a href="https://issa-al-halabi.github.io/Issa-Al-Halabi/" target="_blank">
                   <div class="team-member wow zoomIn" data-wow-delay="0.2s">
                     <div class="flipper">
                       <div class="team-member-front">
                         <div class="team-member-thumb">
                           <img
-                            src="assets/img/issa3.png"
+                            src="assets/img/issa.png"
                             class="img-res"
                             alt=""
                           />
@@ -1805,16 +1805,16 @@
                             Big Experience In The Field
                           </p>
                           <div class="social-icons small">
-                            <a href="https://www.facebook.com/issa.hlp" class="rectangle">
+                            <a href="https://www.facebook.com/issa.hlp" class="rectangle" target="_blank">
                               <i class="fa-brands fa-square-facebook"></i>
                             </a>
-                            <a href="http://wa.me/963946649532" class="rectangle">
+                            <a href="http://wa.me/963946649532" class="rectangle" target="_blank">
                               <i class="fa-brands fa-whatsapp"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/issa-al-halabi-6700b0247" class="rectangle">
+                            <a href="https://www.linkedin.com/in/issa-al-halabi-6700b0247" class="rectangle" target="_blank">
                               <i class="fa-brands fa-linkedin"></i>
                             </a>
-                            <a href="mailto:eesahalabi@gmail.com" class="rectangle">
+                            <a href="mailto:eesahalabi@gmail.com" class="rectangle" target="_blank">
                               <i class="fa fa-envelope"></i>
                             </a>
                           </div>
@@ -1858,6 +1858,7 @@
             href="mailto:mousahlp@gmail.com"
             class="btn localization"
             data-local="IN KONTAKT KOMMEN"
+            target="_blank"
             >GET IN TOUCH</a
           >
           <a
@@ -1876,25 +1877,26 @@
       <section class="section-networks blue-bg">
         <div class="container">
           <div class="wow slideInUp" data-wow-delay="0.1s">
-            <a href="https://www.facebook.com/mousa.halapi.7?mibextid=ZbWKwL" class="rectangle">
+            <a href="https://www.facebook.com/mousa.halapi.7?mibextid=ZbWKwL" class="rectangle" target="_blank">
               <i class="fa-brands fa-square-facebook"></i>
             </a>
           </div>
           <div class="wow slideInUp" data-wow-delay="0.2s">
-            <a href="http://wa.me/963946649532" class="rectangle">
+            <a href="http://wa.me/963946649532" class="rectangle" target="_blank">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </div>
           <div class="wow slideInUp" data-wow-delay="0.3s">
             <a
               href="https://www.linkedin.com/in/mousa-al-halabi-9183a9237"
+              target="_blank"
               class="rectangle"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
           <div class="wow slideInUp" data-wow-delay="0.4s">
-            <a href="mailto:mousahlp@gmail.com" class="rectangle">
+            <a href="mailto:mousahlp@gmail.com" class="rectangle" target="_blank">
               <i class="fa fa-envelope"></i>
             </a>
           </div>
@@ -1943,7 +1945,7 @@
             <a class="rectangle" data-dismiss="modal"
               ><i class="fa fa-times"></i
             ></a>
-            <img class="img-res" src="assets/img/portfolio-1.jpg" alt="" />
+            <img class="img-res" src="" alt="" />
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Project title</h4>
@@ -1959,15 +1961,47 @@
             </p>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn Website"
+            <a href="#" class="btn Website" target="_blank"
               >View Website <i class="fa-solid fa-globe fa-beat"></i
             ></a>
-            <a href="#" class="btn Github"
+            <a href="#" class="btn Github" target="_blank"
               >Github <i class="fa-brands fa-github fa-beat"></i
             ></a>
-            <a href="#" class="btn Youtube"
+            <a href="#" class="btn Youtube" target="_blank"
               >Youtube <i class="fa-brands fa-youtube fa-beat"></i
             ></a>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    
+    <!-- Modals Certificates-->
+    <div id="portfolioItem" class="modal fade fade-scale certificate" role="dialog">
+      <div class="modal-dialog certificates">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="rectangle" data-dismiss="modal"
+              ><i class="fa fa-times"></i
+            ></a>
+          </div>
+          <div class="modal-body">
+            <h2 class="modal-title">Project title</h2>
+            <div class="certificates-content">
+              <div class="certificate">
+                <div class="certificate-box">
+                  <h4 class="certificate-title">Project title</h4>
+                  <p> cd dvcwed dvdwv dvc</p>
+                </div>
+                  <a href="#" class="btn rectangle"
+                  
+                  ><span class="localization" data-local="Schau mal">View</span></a>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /.modal-content -->
@@ -2023,5 +2057,6 @@
     <script type="module" src="assets/js/main.js"></script>
     <script src="assets/js/about.js"></script>
     <script src="assets/js/appPage.js"></script>
+    <script src="assets/js/certificates.js"></script>
   </body>
 </html>
