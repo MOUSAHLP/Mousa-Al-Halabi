@@ -7,12 +7,8 @@ if(htmlTag.lang !="en"){
 
 function changeLocalization() {
   let mytexts = document.querySelectorAll(".localization");
-  console.log(mytexts);
-
   mytexts.forEach((text) => {
-    console.log(text.dataset["local"])
     let temp = text.childNodes[0].nodeValue; 
-    console.log(temp)
     text.childNodes[0].nodeValue  = text.dataset["local"];
     text.dataset["local"] = temp;
   });
