@@ -1,195 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Basic Page Needs
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>MOUSA AL-HALABI</title>
+
+  <meta name="description"
+    content="Full-Stack Developer with over 4 years of experience in PHP, Node.js, and Python, dedicated to building and maintaining scalable RESTful APIs and server-side logic. Well-versed in popular back-end frameworks such as Laravel, NestJS, and Django. Additionally, understanding front-end frameworks for Laravel, including Livewire, Filament, and Blade, enables me to rapidly create websites and dashboards. Experienced in server maintenance with extensive knowledge in Apache and Nginx. Strong background in MongoDB and SQL-based databases, with a passion for optimizing application performance and reducing downtime through unit testing. Skilled in agile environments and proficient in version control systems like Git. Familiar with Docker containerization, which facilitates effective collaboration with teammates. Committed to delivering high-quality code and working closely with front-end developers." />
+  <meta name="author" content="MOUSA AL-HALABI" />
+  <meta name="keywords" content="back-end,front-end.flutter" />
+
+  <!-- Mobile Specific Metas
     ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <title>MOUSA AL-HALABI</title>
-
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
-
-    <!-- Mobile Specific Metas
+  <!-- Favicon
     ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/favicon_64.ico" />
+  <link rel="icon" type="image/ico" sizes="32x32" href="assets/img/favicons/favicon_32.ico" />
+  <link rel="icon" type="image/ico" sizes="16x16" href="assets/img/favicons/favicon_16.ico" />
+  <link rel="icon" sizes="16x16" href="assets/img/favicons/favicon_16.ico" />
+  <link rel="manifest" href="assets/img/manifest.json" />
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela"
+  <!-- MDB -->
+  <!-- <link rel="stylesheet" href="mdb/css/mdb.min.css" /> -->
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="assets/lib/fontawesome/css/fontawesome_6_1.min.css">
+
+  <!-- Google Font -->
+  <!-- <link
+      href="fonts/Montserrat.css"
       rel="stylesheet"
-    />
+    /> -->
+  <link href="assets/fonts/open_sans.woff2" rel="stylesheet" />
 
-    <!-- MDB -->
-    <!-- <link rel="stylesheet" href="assets/lib/mdb/css/mdb.min.css" /> -->
-    <!-- Favicon
-    ================================================== -->
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicon-16x16.png"
-    />
-    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico" />
-    <link rel="manifest" href="assets/img/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="assets/img/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="theme-color" content="#ffffff" />
 
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/lib/magnific-popup/magnific-popup.css" />
 
-    <!-- Font Awesome core CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+  <link rel="stylesheet" href="css/LineIcons.2.0.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/lib/slick/css/slick.css" />
 
-    <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
-    <link
-      href="assets/lib/owlcarousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <style>
-      .divider {
-        border: 1px solid #ccc;
-      }
-      img {
-        width: 100%;
-      }
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
 
-      .swiper-container {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-    </style>
-  </head>
-  <body style="height: auto">
-    <!------ Include the above in your HEAD tag ---------->
+  <link rel="stylesheet" href="css/default.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="css/app.css" />
 
-    <div class="container my-4">
-      <div class="row my-2 justify-content-center">
-        <div class="col-6" style="max-width: 150px;">
-          <img src="assets/img/projects/lordsbox/logo.png" class="logo img-fluid" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+  <section class="header_area" id="header">
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#portfolio-perfect-collapse" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Name -->
+          <div class="page-scroll site-logo">
+          <a href="#header"><img src="assets/img/logo_white.png"></a>
+          <!-- <a href="#header">Mousa</a> -->
+          </div>
         </div>
-        <div class="col-12">
-          <h1 class="project-title text-center my-4 text-primary">
-            project-title
-          </h1>
+        <!-- /.navbar-header -->
+
+        <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+          <!-- Navigation -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll"><a href="#header">Home</a></li>
+            <li class="page-scroll"><a href="#technologies">Technologies</a></li>
+            <li class="page-scroll"><a href="#about">About</a></li>
+            <li class="page-scroll"><a href="#video">Demo</a></li>
+            <li class="page-scroll"><a href="#screenshot">Screenshot</a></li>
+            <li class="page-scroll"><a href="#download">Download</a></li>
+            <li class="page-scroll"><a href="#contact">Contact</a></li>
+            <li class="page-scroll">
+              <div class="dropdown navbar-light nav-link">
+                <div class="dropdown-toggle navbar-light nav-link" href="#" role="button" id="dropdownMenuLink1"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-language"></i><span>Language</span>
+                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                  <button class="dropdown-item btn" data-lang="en">
+                    <i class="flag flag-united-kingdom"></i>English
+                  </button>
+                  <button class="dropdown-item btn" data-lang="de">
+                    <i class="flag flag-de"></i>Deutsch
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- /.navbar-nav -->
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+      <!-- /.primary-navigation -->
+    </header>
+    <!-- End Header -->
+
+    <div id="home" class="header_hero d-lg-flex align-items-center">
+      <img class="shape shape-1" src="assets/img/svg/shape-1.svg" alt="shape" />
+      <img class="shape shape-2" src="assets/img/svg/shape-2.svg" alt="shape" />
+      <img class="shape shape-3" src="assets/img/svg/shape-3.svg" alt="shape" />
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="header_hero_content">
+              <h2 class="header_title wow fadeInLeftBig name" data-wow-delay=".3s">
+                LordsBox
+              </h2>
+              <p id="landing-page-text" class="wow fadeInLeftBig" data-wow-delay=".3s">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat.
+              </p>
+              <ul id="landing-page-buttons">
+                <!-- buttons goes here -->
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="row px-4 py-2">
-        <div class="col-12 text-left px-1 py-5 text-black-50">
-          <p class="fs-4 disc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            commodo finibus tristique. Maecenas dignissim condimentum sem eu
-            tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-            urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-            turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-            ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-            placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-            hendrerit.
-          </p>
-        </div>
-      </div>
-
-        <div class="buttons row pb-5">
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="d-flex justify-content-center align-items-center gap-3 btn w-100 p-0 website" target="_blank"
-              >View Website <i class="fa-solid fa-globe fa-beat"></i
-            ></a>
-          </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="d-flex justify-content-center align-items-center gap-3 btn w-100 p-0 Github" target="_blank"
-              >Github <i class="fa-brands fa-github fa-beat"></i
-            ></a>
-          </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="d-flex justify-content-center align-items-center gap-3 btn w-100 p-0 Youtube" target="_blank"
-              >Youtube <i class="fa-brands fa-youtube fa-beat"></i
-            ></a>
-          </div>
-        </div>
-
-      <div class="row pt-5">
-        <!-- Swiper -->
-        <div class="swiper-container">
-          <div class="images-slider swiper-wrapper">
-           
-
-
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+      <div class="header_image d-flex align-items-end">
+        <div class="image wow fadeInRightBig" data-wow-delay=".7s">
+          <!-- going to update -->
+          <img id="landing-page-image" src="" alt="header App" />
+          <img src="assets/img/svg/dots.svg" alt="dots" class="dots" />
         </div>
       </div>
     </div>
+  </section>
 
-    <script src="assets/js/makeApp.js"></script>
-  </body>
+  <section id="technologies" class="features_area pt-35 pb-80 wow fadeInUp" data-wow-delay=".3s">
+    <div class="container">
+
+      <div class="technologies">
+
+        <div class="wow zoomIn " data-wow-delay="0.2s">
+          <h2 class="localization section-title" data-local="Technologien">
+            Technologies
+          </h2>
+          <p class="section-subtitle">
+            <span class="localization" data-local="Die verwendet wurden">That were used</span>
+          </p>
+        </div>
+
+        <div class="content"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about_area pt-30">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 position-relative" style="z-index: 9;">
+          <div class="about_image mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+            <!-- going to update -->
+            <img id="landing-page-image" class="image" src="" alt="about" />
+            <img class="dots" src="assets/img/svg/dots.svg" alt="dots" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about_content mt-45 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+            <div class="section_title">
+              <!-- <h4 class="title">Discover New Experience!</h4> -->
+
+              <div class="row">
+                <div class="col-6 col-sm-4">
+                  <img class="logo" src="" alt="" style="max-width: 100px;">
+                </div>
+
+                <div class="wow zoomIn about-title" data-wow-delay="0.2s">
+                  <h2 class="localization section-title" data-local="Über die App">
+                    about the app
+                  </h2>
+                  <p class="section-subtitle">
+                    <span class="localization" data-local="lerne die App besser kennen">
+                      know the app better</span>
+                  </p>
+                </div>
+                <p class="disc">
+                  <!-- discription goes here -->
+                </p>
+              </div>
+            </div>
+            <a class="btn mt-4 github" href="#">Github</a>
+            <a class="btn mt-4 view-webSite" href="#">Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="video_area pt-80 pb-80">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="wow zoomIn my-title" data-wow-delay="0.2s">
+          <h2 class="section-title">
+            Demo
+          </h2>
+          <p class="section-subtitle">
+            <span class="localization" data-local="Demonstriert die App">demonstrates the app</span>
+          </p>
+        </div>
+
+      </div>
+      <div class="row wow zoomIn" data-wow-delay="0.2s">
+        <div class="col-lg-12">
+          <div class="video_image">
+            <img src="assets/img/video.jpg" alt="video" />
+            <a id="youtube-link" class="play video-popup" href="https://www.youtube.com/watch?v=7pzpHwjhBJc">
+              <i class="lni lni-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshot" class="screenshot_area d-lg-flex align-items-center wow zoomIn" data-wow-delay="0.2s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="screenshot_content">
+            <div class="section_title">
+
+              <div class="about-title">
+                <h2 class="localization section-title" data-local="Screenshots">
+                  Screenshots
+                </h2>
+                <p class="section-subtitle">
+                  <span class="localization" data-local="Der App">
+                    Of the app ui</span>
+                </p>
+              </div>
+
+              <p class="localization"
+                data-local="Erkunden Sie unser Produkt mit diesen Screenshots im Detail und erhalten Sie einen genaueren Einblick in die Benutzeroberfläche, die Funktionen und das Gesamterlebnis.">
+                Explore our product in detail with these screenshots, offering a closer look at the user interface,
+                features, and overall experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screenshot_slide">
+      <div class="screenshot_active" id="screenshot_slides">
+
+        <!-- slide goes here -->
+
+      </div>
+    </div>
+  </section>
+
+  <section class="laptop-slides">
+    <div class="container">
+      <div class="about-title">
+        <h2 class="localization section-title" data-local="Laptop-Screenshots">
+          Laptop Screenshots
+        </h2>
+        <p class="section-subtitle">
+          <span class="localization" data-local="für besseres Aussehen">
+            for better look</span>
+        </p>
+      </div>
+
+      <div class="screenshot_slide_dashboard">
+<!-- images go here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="download_app_area mb-80 wow zoomIn" data-wow-delay="0.2s">
+    <div class="container">
+      <div class="download_app">
+        <div class="download_shape">
+          <img src="assets/img/svg/shape-5.svg" alt="shape" />
+        </div>
+        <div class="download_shape_2">
+          <img src="assets/img/svg/shape-6.png" alt="shape" />
+        </div>
+        <div class="download_app_content">
+          <h3 class="download_title">Download The App</h3>
+          <p class="localization"
+            data-local="Laden Sie unsere App herunter, um unterwegs auf alle Funktionen zuzugreifen. Verfügbar für iOS und Android für ein nahtloses Erlebnis jederzeit und überall.">
+            Download our app to access all features on the go. Available on iOS and Android for a seamless experience
+            anytime, anywhere.
+          </p>
+          <ul id="store_buttons">
+            <!-- store buttons goes here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Me section -->
+  <section class="section-background section-me background-overlay text-center wow zoomIn" data-wow-delay="0.2s"
+    id="contact">
+    <div class="page-scroll">
+      <h2 class="localization title" data-local="Sind Sie von meiner Arbeit beeindruckt?">
+        Are You Impressed By My Work?
+      </h2>
+      <p class="localization subtitle" data-local="Sie können mit mir Leicht Kontaktieren">
+        You Can Easily Contact With Me
+      </p>
+      <a href="mailto:mousahlp@gmail.com" class="btn localization" data-local="IN KONTAKT KOMMEN" target="_blank">GET
+        IN TOUCH</a>
+      <a href="assets/cvs/Mousa_Al_Halabi.pdf" download="Mousa_Al_Halabi" class="btn localization"
+        data-local="mein Lebenslauf">Download My CV</a>
+    </div>
+  </section>
+  <!-- End Me section -->
+
+  <!-- Social Networks section -->
+  <section class="section-networks blue-bg">
+    <div class="container">
+      <div class="wow slideInUp" data-wow-delay="0.1s">
+        <a href="https://www.facebook.com/mousa.halapi.7?mibextid=ZbWKwL" class="rectangle" target="_blank">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+      </div>
+      <div class="wow slideInUp" data-wow-delay="0.2s">
+        <a href="http://wa.me/963946649532" class="rectangle" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="wow slideInUp" data-wow-delay="0.3s">
+        <a href="https://www.linkedin.com/in/mousa-al-halabi-9183a9237" target="_blank" class="rectangle">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="wow slideInUp" data-wow-delay="0.4s">
+        <a href="mailto:mousahlp@gmail.com" class="rectangle" target="_blank">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="assets/lib/jquery/jquery.min.js"></script>
+
+  <script src="assets/lib/modernizr/modernizr-3.7.1.min.js"></script>
+
+  <script src="assets/lib/popper/popper.min.js"></script>
+  <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/lib/slick/js/slick.min.js"></script>
+
+  <script src="assets/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <script src="assets/lib/easing/easing.min.js"></script>
+
+  <script src="assets/lib/wow/wow.min.js"></script>
+
+  <script src="assets/lib/touchswipe/touchswipe.min.js"></script>
+
+  <script src="js/localization.js"></script>
+  <script type="module" src="js/app.js"></script>
+
+</body>
+
 </html>

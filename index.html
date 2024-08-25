@@ -1,588 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
+
+<head>
+  <!-- Basic Page Needs
     ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>MOUSA AL-HALABI</title>
+  <title>MOUSA AL-HALABI</title>
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
+  <meta name="description"
+    content="Full-Stack Developer with over 4 years of experience in PHP, Node.js, and Python, dedicated to building and maintaining scalable RESTful APIs and server-side logic. Well-versed in popular back-end frameworks such as Laravel, NestJS, and Django. Additionally, understanding front-end frameworks for Laravel, including Livewire, Filament, and Blade, enables me to rapidly create websites and dashboards. Experienced in server maintenance with extensive knowledge in Apache and Nginx. Strong background in MongoDB and SQL-based databases, with a passion for optimizing application performance and reducing downtime through unit testing. Skilled in agile environments and proficient in version control systems like Git. Familiar with Docker containerization, which facilitates effective collaboration with teammates. Committed to delivering high-quality code and working closely with front-end developers." />
+  <meta name="author" content="MOUSA AL-HALABI" />
+  <meta name="keywords" content="back-end,front-end.flutter" />
 
-    <!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela"
-      rel="stylesheet"
-    />
+  <!-- Fonts -->
+  <link href="assets/fonts/open_sans.woff2" rel="stylesheet" />
 
-    <!-- MDB -->
-    <!-- <link rel="stylesheet" href="assets/lib/mdb/css/mdb.min.css" /> -->
-    <!-- Favicon
+  <!-- Favicon
     ================================================== -->
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicon-16x16.png"
-    />
-    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico" />
-    <link rel="manifest" href="assets/img/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="assets/img/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/favicon_64.ico" />
+  <link rel="icon" type="image/ico" sizes="32x32" href="assets/img/favicons/favicon_32.ico" />
+  <link rel="icon" type="image/ico" sizes="16x16" href="assets/img/favicons/favicon_16.ico" />
+  <link rel="icon" sizes="16x16" href="assets/img/favicons/favicon_16.ico" />
+  <link rel="manifest" href="assets/img/manifest.json" />
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Stylesheets
+  <!-- Stylesheets
     ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
 
-    <!-- Font Awesome core CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+  <!-- Font Awesome core CSS -->
+  <link rel="stylesheet" href="assets/lib/fontawesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/lib/fontawesome/css/fontawesome_6_1.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- slick theme -->
+  <link rel="stylesheet" type="text/css" href="assets/lib/slick/css/slick-theme.css" />
 
-    <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
-    <link
-      href="assets/lib/owlcarousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- Hero Section, Background Image change in css -->
-    <div id="top" class="hero background-overlay">
-      <!-- Name & Description -->
-      <div class="hero-content">
-        <h1>
-          <span class="localization" data-local="Ich Bin">I am</span> Mousa
-          AL-Halabi
-        </h1>
-        <div class="hero-job">
-          <h2 class="typed-text-h2"></h2>
-          <div
-            class="typed-text localization"
-            data-local=" Flutter Entwickler, Web Designer, Web Entwickler, Flutter Entwickler, Front End Entwickler, Apps
-          Designer, Apps Entwickler, Desktop Entwickler"
-          >
-            Flutter Developer, Web Designer, Web Developer, Flutter Developer,
-            Front End Developer, Apps Designer, Apps Developer, Desktop
-            Developer
-          </div>
-          <!-- <span
-            class="localization"
-            data-local="Ich bin ein kreativer Webentwickler"
-            >I'M A CREATIVE WEB DEVELOPER</span
-          > -->
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- Hero Section, Background Image change in css -->
+  <div id="top" class="hero blue-background-overlay">
+    <!-- Name & Description -->
+    <div class="hero-content">
+      <h1>
+        <span class="localization" data-local="Ich Bin">I am</span>
+        <strong class="my-name">Mousa AL-Halabi</strong>
+      </h1>
+      <div class="hero-job">
+        <h2 class="typed-text-h2"></h2>
+        <div class="typed-text localization" data-local=" Flutter Entwickler, Web Designer, Web Entwickler, Flutter Entwickler, Front End Entwickler, Apps
+          Designer, Apps Entwickler, Desktop Entwickler">
+          Flutter Developer, Web Designer, Web Developer, Flutter Developer, Front End Developer, Apps Designer, Apps
+          Developer, Desktop Developer
         </div>
-        <p
-          class="hero-job-desc localization"
-          data-local="ICH STEHE AUF EINEM SCHÖNEN PLATZ &amp; WO sich Designcodes überschneiden."
-        >
-          I STAND ON A SWEET SPOT WHERE DESIGN &amp; CODE INTERSECTS.
+
+      </div>
+
+      <div class="hero-buttons">
+
+        <a href="assets/cvs/Mousa_Al_Halabi.pdf" download="Mousa_Al_Halabi" class="btn localization"
+          data-local="mein Lebenslauf">Download My CV</a>
+
+        <a href="mailto:mousahlp@gmail.com" class="btn localization" data-local="IN KONTAKT KOMMEN" target="_blank">GET
+          IN TOUCH</a>
+      </div>
+
+    </div>
+    <div class="hero-img rectangle">
+      <img src="assets/img/mousa.png" alt="mousa">
+    </div>
+    <!-- /.hero-content -->
+  </div>
+  <!-- /.hero -->
+  <!-- End Hero -->
+
+  <!-- Header -->
+  <header id="masthead" class="site-header">
+    <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#portfolio-perfect-collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Name -->
+        <div class="page-scroll site-logo">
+          <a href="#top"><img src="assets/img/logo_white.png"></a>
+        </div>
+      </div>
+      <!-- /.navbar-header -->
+
+      <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+        <!-- Navigation -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="page-scroll"><a href="#top">Home</a></li>
+          <li class="page-scroll"><a href="#intro">Intro</a></li>
+          <li class="page-scroll"><a href="#about">About</a></li>
+          <li class="page-scroll"><a href="#companies">Companies</a></li>
+          <li class="page-scroll"><a href="#certificates">Education</a></li>
+          <li class="page-scroll"><a href="#history">History</a></li>
+          <li class="page-scroll"><a href="#works">Works</a></li>
+          <li class="page-scroll"><a href="#reviews">Reviews</a></li>
+          <li class="page-scroll"><a href="#team">Team</a></li>
+          <li class="page-scroll"><a href="#contact">Contact</a></li>
+          <li class="page-scroll">
+            <div class="dropdown navbar-light nav-link">
+              <div class="dropdown-toggle navbar-light nav-link" href="#" role="button" id="dropdownMenuLink1"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-language"></i><span>Language</span>
+              </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                <button class="dropdown-item btn" data-lang="en">
+                  <i class="flag flag-united-kingdom"></i>English
+                </button>
+                <button class="dropdown-item btn" data-lang="de">
+                  <i class="flag flag-de"></i>Deutsch
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- /.navbar-nav -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <!-- /.primary-navigation -->
+  </header>
+  <!-- End Header -->
+
+  <!-- Main content -->
+  <main id="main" class="site-main">
+
+    <!-- Hello section -->
+    <section class="site-section section-hello wow fadeIn" data-wow-delay="0.3s" id="intro">
+      <div class="container">
+        <h2 class="localization wow zoomIn" data-wow-delay="0.1s" data-local="HALLO & WILLKOMMEN">
+          HELLO &amp; WELCOME
+        </h2>
+        <p class="section-subtitle wow zoomIn" data-wow-delay="0.1s">
+          <span class="localization" data-local="Entdecken Sie meine welt">EXPLORE MY WORLD</span>
+        </p>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="main-service text-left wow slideInLeft" data-wow-delay="0.2s">
+              <div class="rectangle">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <h3 class="localization" data-local="Überblick">Overview</h3>
+              <p>
+                <span class="localization" data-local="Ich komme aus dem Libanon">I Am A Lebanese</span>
+                <br />
+                <span class="localization" data-local="Ich lebe in Syrien">I live in Syria</span>
+              </p>
+            </div>
+            <!-- /.main-service -->
+
+            <div class="main-service text-left wow slideInLeft" data-wow-delay="0.3s">
+              <div class="rectangle">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="localization" data-local="Ist ein Full-Stack-Entwickler">
+                Is A Full-Stack Developer
+              </h3>
+              <p>
+                <span class="localization"
+                  data-local="Ich kümmere mich sowohl um Frontend- als auch um Backend-Entwicklungsaufgaben ">I handle
+                  both front-end and back-end development tasks
+                  <span class="localization" data-local="Seit 2019"> Since 2019</span>
+              </p>
+            </div>
+            <!-- /.main-service -->
+          </div>
+          <div class="col-sm-4">
+            <div class="big-rectangle wow zoomIn" data-wow-delay="0.2s">
+              <img loading="lazy" src="assets/img/logo_white.png">
+            </div>
+            <!-- /.big-rectangle -->
+          </div>
+          <div class="col-sm-4">
+            <div class="main-service text-left wow slideInRight" data-wow-delay="0.2s">
+              <div class="rectangle">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <!-- /.rectangle -->
+              <h3 class="localization" data-local="Ist ein Ingenieur">
+                Is An Engineer
+              </h3>
+              <p class="localization" data-local="Ich bin Student an der Universität Damaskus für Kommunikation und
+                Elektrotechnik seit 2020">
+                I Am A Student At Damascus University Communications and
+                Electronics Engineering Since 2020
+              </p>
+            </div>
+            <!-- /.main-service -->
+            <div class="main-service text-left wow slideInRight" data-wow-delay="0.3s">
+              <div class="rectangle">
+                <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+              </div>
+              <!-- /.rectangle -->
+              <h3 class="localization" data-local="Ist ein mobiler Entwickler">
+                Is A Mobile Developer
+              </h3>
+              <p>
+                <span class="localization"
+                  data-local="Ich entwickle mobile Anwendungen mit meinen Kenntnissen über Flutter & Dart">
+                  I Develop Mobile Applications Using My Knowledge Of Flutter
+                  & Dart
+                </span>
+                <br />
+                <span class="localization" data-local="Seit 2020">
+                  Since 2020
+                </span>
+              </p>
+            </div>
+            <!-- /.main-service -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section-hello -->
+    <!-- End Hello section -->
+
+    <!-- Quote section -->
+    <section class="section-background section-quote background-overlay text-center wow zoomIn" data-wow-delay="0.2s">
+      <div class="container">
+        <p>
+          <span class="localization" data-local="Ich mache unsere">
+            I make our
+          </span>
+          <span class="localization quote" data-local="Arbeit sieht gut aus">work look good</span>
+          &amp;
+          <span class="localization" data-local="haben Erfahrung in der">
+            have experience in the
+          </span>
+          <span class="localization" data-local="Erstellung von Markenidentitäten für">
+            creation of brand identities for
+          </span>
+          <span class="localization" data-local="drucken">print</span>
+          &amp;
+          <span> web </span>
+          <span class="localization" data-local=", mit einem Unterschied.">
+            , with a difference.
+          </span>
         </p>
       </div>
-      <!-- /.hero-content -->
+    </section>
+    <!-- /.section-quote -->
+    <!-- End Quote section -->
 
-      <div class="hero-arrow page-scroll home-arrow-down">
-        <a class="" href="#intro"
-          ><i class="fa fa-angle-double-down" aria-hidden="true"></i
-        ></a>
+    <!-- About section -->
+    <section class="site-section section-about text-center" id="about">
+      <div class="container">
+        <h2 class="localization wow zoomIn" data-wow-delay="0.2s" data-local="ÜBER MICH">
+          ABOUT ME
+        </h2>
+        <p class="section-subtitle">
+          <span class="localization wow zoomIn" data-wow-delay="0.2s" data-local="Warum ich">Why Me</span>
+        </p>
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about wow slideInUp" data-wow-delay="0.1s">
+              <div class="medium-rectangle rectangle">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+              <!-- /.rectangle -->
+              <h3 class="localization" data-local="Die Verlässlichkeit">
+                The reliability
+              </h3>
+            </div>
+            <!-- /.feature-about -->
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about wow slideInUp" data-wow-delay="0.2s">
+              <div class="medium-rectangle rectangle">
+                <i class="fa-solid fa-business-time"></i>
+              </div>
+              <!-- /.rectangle -->
+              <h3 class="localization" data-local="Zeiteinteilung">
+                Time Management
+              </h3>
+            </div>
+            <!-- /.feature-about -->
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about wow slideInUp" data-wow-delay="0.3s">
+              <div class="medium-rectangle rectangle">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <!-- /.rectangle -->
+              <h3 class="localization" data-local="Leistungs geschwindigkeit">
+                Performance Speed
+              </h3>
+            </div>
+            <!-- /.feature-about -->
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="feature-about wow slideInUp" data-wow-delay="0.4s">
+              <div class="medium-rectangle rectangle">
+                <i class="fa-regular fa-comments"></i>
+              </div>
+              <!-- /.rectangle -->
+              <h3 class="localization" data-local="Kommunikation Fähigkeiten">
+                Communicate Skills
+              </h3>
+            </div>
+            <!-- /.feature-about -->
+          </div>
+        </div>
       </div>
-      <!-- /.hero-arrow -->
-    </div>
-    <!-- /.hero -->
-    <!-- End Hero -->
+    </section>
+    <!-- /.section-about -->
+    <!-- End About section -->
 
-    <!-- Header -->
-    <header id="masthead" class="site-header">
-      <nav id="primary-navigation" class="site-navigation" data-spy="affix">
-        <div class="navbar-header page-scroll">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#portfolio-perfect-collapse"
-            aria-expanded="false"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <!-- Skills section -->
+    <section class="site-section section-services">
+      <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
+        <h2 class="localization" data-local="Meine Fähigkeiten">
+          My Skills
+        </h2>
+        <p class="section-subtitle">
+          <span class="localization" data-local="In verschiedenen Bereichen">In Various Fields</span>
+        </p>
+      </div>
 
-          <!-- Name -->
-          <div class="page-scroll site-logo">
-            <a href="#top">Mousa</a>
+      <div class="container">
+        <div class="carousel slide wow slideInUp" data-wow-delay="0.2s" id="services-carousel">
+          <div class="item-controls text-center">
+            <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i class="fa fa-angle-left"
+                aria-hidden="true"></i>
+            </a>
+            <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i
+                class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
-        </div>
-        <!-- /.navbar-header -->
+          <!-- /.item-controls -->
 
-        <div
-          class="main-menu collapse navbar-collapse"
-          id="portfolio-perfect-collapse"
-        >
-          <!-- Navigation -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll"><a href="#top">Home</a></li>
-            <li class="page-scroll"><a href="#intro">Intro</a></li>
-            <li class="page-scroll"><a href="#about">About</a></li>
-            <li class="page-scroll"><a href="#companies">Companies</a></li>
-            <li class="page-scroll"><a href="#history">History</a></li>
-            <li class="page-scroll"><a href="#services">Services</a></li>
-            <li class="page-scroll"><a href="#works">Works</a></li>
-            <li class="page-scroll"><a href="#reviews">Reviews</a></li>
-            <li class="page-scroll"><a href="#team">Team</a></li>
-            <li class="page-scroll"><a href="#contact">Contact</a></li>
-            <li class="page-scroll">
-              <div class="dropdown navbar-light nav-link">
-                <div
-                  class="dropdown-toggle navbar-light nav-link"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink1"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-language"></i><span>Language</span>
-                </div>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                  <button class="dropdown-item btn" data-lang="en">
-                    <i class="flag flag-united-kingdom"></i>English
-                  </button>
-                  <button class="dropdown-item btn" data-lang="de">
-                    <i class="flag flag-de"></i>Deutsch
-                  </button>
+          <div class="carousel-indicators nav-tabs text-center">
+            <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
+              <div class="col-xs-4 col-sm-fifth">
+                <div class="service">
+                  <div class="rectangle">
+                    <i class="fa-solid fa-server"></i>
+                  </div>
+                  <p class="hidden-xs localization" data-local="BACK-END ENTWICKLUNG">
+                    BACK-END DEVELOPMENT
+                  </p>
                 </div>
               </div>
-            </li>
-          </ul>
-          <!-- /.navbar-nav -->
-        </div>
-        <!-- /.navbar-collapse -->
-      </nav>
-      <!-- /.primary-navigation -->
-    </header>
-
-    <!-- /#header -->
-    <!-- End Header -->
-
-    <!-- Main content -->
-    <main id="main" class="site-main">
-      <!-- Hello section -->
-      <section
-        class="site-section section-hello wow fadeIn"
-        data-wow-delay="0.3s"
-        id="intro"
-      >
-        <div class="container">
-          <h2
-            class="localization wow zoomIn"
-            data-wow-delay="0.1s"
-            data-local="HALLO & WILLKOMMEN"
-          >
-            HELLO &amp; WELCOME
-          </h2>
-          <p class="section-subtitle wow zoomIn" data-wow-delay="0.1s">
-            <span class="localization" data-local="Entdecken Sie meine welt"
-              >EXPLORE MY WORLD</span
-            >
-          </p>
-          <div class="row">
-            <div class="col-sm-4">
-              <div
-                class="main-service text-left wow slideInLeft"
-                data-wow-delay="0.2s"
-              >
-                <div class="rectangle">
-                  <i class="fa fa-check" aria-hidden="true"></i>
+            </a><!-- /.item -->
+            <a data-target="#services-carousel" href="#" data-slide-to="1">
+              <div class="col-xs-4 col-sm-fifth">
+                <div class="service">
+                  <div class="rectangle">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  <p class="hidden-xs localization" data-local="ENTWICKLUNG MOBILER APPS">
+                    MOBILE APPS DEVELOPMENT
+                  </p>
                 </div>
-                <h3 class="localization" data-local="Überblick">Overview</h3>
-                <p>
-                  <span
-                    class="localization"
-                    data-local="Ich komme aus dem Libanon"
-                    >I Am A Lebanese</span
-                  >
-                  <br />
-                  <span class="localization" data-local="Ich lebe in Syrien"
-                    >I live in Syria</span
-                  >
-                </p>
               </div>
-              <!-- /.main-service -->
-
-              <div
-                class="main-service text-left wow slideInLeft"
-                data-wow-delay="0.3s"
-              >
-                <div class="rectangle">
-                  <i class="fa-solid fa-code"></i>
+            </a><!-- /.item -->
+            <a data-target="#services-carousel" href="#" data-slide-to="2">
+              <div class="col-xs-4 col-sm-fifth">
+                <div class="service">
+                  <div class="rectangle">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <p class="hidden-xs localization" data-local="WEB ENTWICKLUNG">
+                    WEB DEVELOPMENT
+                  </p>
                 </div>
-                <h3 class="localization" data-local="Ist ein Webentwickler">
-                  Is A Web Developer
-                </h3>
-                <p>
-                  <span
-                    class="localization"
-                    data-local="Ich entwickle Webanwendungen mit"
-                    >I Develop Web Applications Using</span
-                  >
-                  <br />Html & Css & JavaScript
-                  <br />
-                  <span class="localization" data-local="Seit 4 Jahren"
-                    >Since 4 Years</span
-                  >
-                </p>
               </div>
-              <!-- /.main-service -->
-            </div>
-            <div class="col-sm-4">
-              <div class="big-rectangle wow zoomIn" data-wow-delay="0.2s">
-                <img src="assets/img/logo.png" alt="logo" />
-              </div>
-              <!-- /.big-rectangle -->
-            </div>
-            <div class="col-sm-4">
-              <div
-                class="main-service text-left wow slideInRight"
-                data-wow-delay="0.2s"
-              >
-                <div class="rectangle">
-                  <i class="fa-solid fa-helmet-safety"></i>
+            </a><!-- /.item -->
+            <a data-target="#services-carousel" href="#" data-slide-to="3">
+              <div class="col-xs-4 col-sm-fifth">
+                <div class="service">
+                  <div class="rectangle">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <p class="hidden-xs localization" data-local="Technische Fähigkeiten">
+                    Technical Skills
+                  </p>
                 </div>
-                <!-- /.rectangle -->
-                <h3 class="localization" data-local="Ist ein Ingenieur">
-                  Is An Engineer
-                </h3>
-                <p
-                  class="localization"
-                  data-local="Ich bin Student an der Universität Damaskus für Kommunikation und
-                Elektrotechnik seit 2020"
-                >
-                  I Am A Student At Damascus University Communications and
-                  Electronics Engineering Since 2020
-                </p>
               </div>
-              <!-- /.main-service -->
-              <div
-                class="main-service text-left wow slideInRight"
-                data-wow-delay="0.3s"
-              >
-                <div class="rectangle">
-                  <i
-                    class="fa-solid fa-mobile-screen-button"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <!-- /.rectangle -->
-                <h3
-                  class="localization"
-                  data-local="Ist ein mobiler Entwickler"
-                >
-                  Is A Mobile Developer
-                </h3>
-                <p>
-                  <span
-                    class="localization"
-                    data-local="Ich entwickle mobile Anwendungen mit meinen Kenntnissen über Flutter & Dart"
-                  >
-                    I Develop Mobile Applications Using My Knowledge Of Flutter
-                    & Dart
-                  </span>
-                  <br />
-                  <span class="localization" data-local="Seit 2020">
-                    Since 2020
-                  </span>
-                </p>
-              </div>
-              <!-- /.main-service -->
-            </div>
+            </a><!-- /.item -->
           </div>
-        </div>
-      </section>
-      <!-- /.section-hello -->
-      <!-- End Hello section -->
+          <!-- /.carousel-indicators -->
 
-      <!-- Quote section -->
-      <section
-        class="section-background section-quote background-overlay text-center wow zoomIn"
-        data-wow-delay="0.2s"
-      >
-        <div class="container">
-          <p>
-            <span class="localization" data-local="Ich mache unsere">
-              I make our
-            </span>
-            <span class="localization quote" data-local="Arbeit sieht gut aus"
-              >work look good</span
-            >
-            &amp;
-            <span class="localization" data-local="haben Erfahrung in der">
-              have experience in the
-            </span>
-            <span
-              class="localization"
-              data-local="Erstellung von Markenidentitäten für"
-            >
-              creation of brand identities for
-            </span>
-            <span class="localization" data-local="drucken">print</span>
-            &amp;
-            <span> web </span>
-            <span class="localization" data-local=", mit einem Unterschied.">
-              , with a difference.
-            </span>
-          </p>
-        </div>
-      </section>
-      <!-- /.section-quote -->
-      <!-- End Quote section -->
+          <div class="carousel-inner">
 
-      <!-- About section -->
-      <section class="site-section section-about text-center" id="about">
-        <div class="container">
-          <h2
-            class="localization wow zoomIn"
-            data-wow-delay="0.2s"
-            data-local="ÜBER MICH"
-          >
-            ABOUT ME
-          </h2>
-          <p class="section-subtitle">
-            <span
-              class="localization wow zoomIn"
-              data-wow-delay="0.2s"
-              data-local="Warum ich"
-              >Why Me</span
-            >
-          </p>
-          <div class="row">
-            <div class="col-sm-3 col-xs-6">
-              <div class="feature-about wow slideInUp" data-wow-delay="0.1s">
-                <div class="medium-rectangle rectangle">
-                  <i class="fa-solid fa-hand-fist"></i>
-                </div>
-                <!-- /.rectangle -->
-                <h3 class="localization" data-local="Die Verlässlichkeit">
-                  The reliability
-                </h3>
-              </div>
-              <!-- /.feature-about -->
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <div class="feature-about wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <i class="fa-solid fa-business-time"></i>
-                </div>
-                <!-- /.rectangle -->
-                <h3 class="localization" data-local="Zeiteinteilung">
-                  Time Management
-                </h3>
-              </div>
-              <!-- /.feature-about -->
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <div class="feature-about wow slideInUp" data-wow-delay="0.3s">
-                <div class="medium-rectangle rectangle">
-                  <i class="fa-solid fa-bolt"></i>
-                </div>
-                <!-- /.rectangle -->
-                <h3 class="localization" data-local="Leistungs geschwindigkeit">
-                  Performance Speed
-                </h3>
-              </div>
-              <!-- /.feature-about -->
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <div class="feature-about wow slideInUp" data-wow-delay="0.4s">
-                <div class="medium-rectangle rectangle">
-                  <i class="fa-regular fa-comments"></i>
-                </div>
-                <!-- /.rectangle -->
-                <h3 class="localization" data-local="Kommunikation Fähigkeiten">
-                  Communicate Skills
-                </h3>
-              </div>
-              <!-- /.feature-about -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.section-about -->
-      <!-- End About section -->
-
-      <!-- Skills section -->
-      <section class="site-section section-skills">
-        <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
-          <h2 class="localization" data-local="Meine Fähigkeiten">My Skills</h2>
-          <p class="section-subtitle">
-            <span class="localization" data-local="Meine Sprachen"
-              >My Languages</span
-            >
-          </p>
-        </div>
-
-        <div class="container">
-          <div class="about-grid">
-            <!----------------------------- my skills section --------------------------- -->
-            <div class="about-me wow slideInLeft" data-wow-delay="0.1s">
-              <h2 class="localization" data-local="Weltsprachen">
-                World Languages
-              </h2>
-              <div class="my-languages">
-                <div class="my-language" data-wow-delay="0.3s">
-                  <div class="precentage" data-precentage="95%">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewbox="0 0 100 100"
-                    >
-                      <path
-                        class="grey"
-                        d="M40,90
-                                                                       A40,40 0 1,1 60,90"
-                        style="fill: none"
-                      />
-
-                      <path
-                        class="color ar"
-                        d="M40,90
-                                                                       A40,40 0 1,1 60,90"
-                        style="fill: none"
-                      />
-                    </svg>
-                  </div>
-                  <div class="my-language-text">
-                    <h3 class="localization" data-local="Arabisch">Arabic</h3>
-                    <p class="localization" data-local="Muttersprachler">
-                      Native Speaker
-                    </p>
-                  </div>
-                </div>
-                <div class="my-language" data-wow-delay="0.3s">
-                  <div class="precentage" data-precentage="85%">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewbox="0 0 100 100"
-                    >
-                      <path
-                        class="grey"
-                        d="M40,90
-                                                                         A40,40 0 1,1 60,90"
-                        style="fill: none"
-                      />
-
-                      <path
-                        class="color en"
-                        d="M40,90
-                                                                         A40,40 0 1,1 60,90"
-                        style="fill: none"
-                      />
-                    </svg>
-                  </div>
-                  <div class="my-language-text">
-                    <h3 class="localization" data-local="Englisch">English</h3>
-                    <p
-                      class="localization"
-                      data-local="fließend sprechend , Studierte an der Universität"
-                    >
-                      fluent speaker , Studied at university
-                    </p>
-                  </div>
-                </div>
-                <div class="my-language" data-wow-delay="0.3s">
-                  <div class="precentage" data-precentage="70%">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewbox="0 0 100 100"
-                    >
-                      <path
-                        class="grey"
-                        d="M40,90
-                                                                         A40,40 0 1,1 60,90"
-                        style="fill: none"
-                      />
-
-                      <path
-                        class="color de"
-                        d="M40,90
-                                                                         A40,40 0 1,1 60,90"
-                        style="fill: none"
-                      />
-                    </svg>
-                  </div>
-                  <div class="my-language-text">
-                    <h3 class="localization" data-local="Deutsch">German</h3>
-                    <p class="localization" data-local="B1 , selbst gelernt">
-                      B1 , self-learned
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!----------------------------- my skills section --------------------------- -->
-            <div class="my-skills wow slideInRight" data-wow-delay="0.1s">
-              <h2 class="localization" data-local="Programmiersprachen">
-                Programming Languages
-              </h2>
+            <!-- backend -->
+            <div id="item0" class="item tab-pane active">
+              <h2>backend</h2>
+              <p class="localization"
+                data-local="Ich bin auf die Back-End-Entwicklung spezialisiert und erstelle robuste und skalierbare serverseitige Anwendungen. Zu meinen Fachkenntnissen gehört die Arbeit mit PHP, Node.js und Frameworks wie Laravel und Express.js, um effiziente und sichere Webdienste zu erstellen.">
+                I specialize in back-end development, creating robust and scalable server-side applications. My
+                expertise includes working with PHP, Node.js, and frameworks like Laravel and Express.js to build
+                efficient and secure web services.</p>
               <div class="progress-group">
-                <p>Flutter & Dart</p>
-
+                <p>PHP / LARAVEL</p>
                 <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-transitiongoal="95"
-                  ></div>
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
                 </div>
                 <!-- /.progress -->
               </div>
               <!-- /.progress-group -->
 
               <div class="progress-group">
+                <p>Node js / Express js</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.progress-group -->
+
+              <div class="progress-group">
+                <p>SQL</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.progress-group -->
+
+              <div class="progress-group">
+                <p>Python / Django</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div>
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.progress-group -->
+
+            </div>
+            <!-- /.item -->
+
+            <!-- Mobile -->
+            <div id="item1" class="item tab-pane">
+
+              <h2>mobile apps</h2>
+              <p class="localization"
+                data-local="Ich verfüge über fundierte Kenntnisse in der mobilen Entwicklung und konzentriere mich auf die Erstellung plattformübergreifender Anwendungen mit Flutter und Dart. Ich erstelle reibungslose und intuitive mobile Erlebnisse und sorge für hohe Leistung sowohl auf Android- als auch auf iOS-Plattformen.">
+                I have a strong background in mobile development, with a focus on building cross-platform applications
+                using Flutter and Dart. I create smooth and intuitive mobile experiences, ensuring high performance on
+                both Android and iOS platforms.
+              </p>
+              <div class="progress-group">
+                <p>Flutter</p>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
+                </div>
+                <!-- /.progress -->
+              </div>
+              <div class="progress-group">
+                <p>Dart</p>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.progress-group -->
+
+            </div>
+            <!-- /.item -->
+
+            <!-- web  -->
+            <div id="item2" class="item tab-pane">
+              <h2>frontend</h2>
+              <p class="localization"
+                data-local="Meine Frontend-Entwicklungsfähigkeiten ermöglichen es mir, optisch ansprechende und benutzerfreundliche Schnittstellen zu erstellen. Ich habe Erfahrung mit HTML, CSS, JavaScript und modernen Tools wie Livewire, Blade und Filament. Diese Technologien ermöglichen es mir, reaktionsfähige, dynamische und ansprechende Websites und Anwendungen zu erstellen, die ein außergewöhnliches Benutzererlebnis bieten.">
+                My front-end development skills allow me to create visually appealing and user-friendly interfaces. I
+                have experience with HTML, CSS, JavaScript, and modern tools like Livewire, Blade, and Filament. These
+                technologies enable me to build responsive, dynamic, and engaging websites and applications that provide
+                an exceptional user experience.</p>
+
+              <div class="progress-group">
                 <p>Html & Css</p>
                 <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-transitiongoal="95"
-                  ></div>
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
                 </div>
                 <!-- /.progress -->
               </div>
@@ -591,1725 +508,1073 @@
               <div class="progress-group">
                 <p>JavaScript</p>
                 <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-transitiongoal="85"
-                  ></div>
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
                 </div>
                 <!-- /.progress -->
               </div>
               <!-- /.progress-group -->
 
               <div class="progress-group">
-                <p>PHP & SQL</p>
+                <p>Blade/LiveWire</p>
                 <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-transitiongoal="90"
-                  ></div>
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
                 </div>
                 <!-- /.progress -->
               </div>
               <!-- /.progress-group -->
 
               <div class="progress-group">
-                <p>Python</p>
+                <p>Filament</p>
                 <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-transitiongoal="70"
-                  ></div>
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
                 </div>
                 <!-- /.progress -->
               </div>
               <!-- /.progress-group -->
 
-              <div class="frame-works">
-                <h2 class="localization" data-local="Meine Frame Works">
-                  My Frame Works
-                </h2>
-                <div class="progress-group">
-                  <p>bootstrap</p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      data-transitiongoal="95"
-                    ></div>
-                  </div>
-                  <!-- /.progress -->
+              <!-- /.progress-group -->
+              <div class="progress-group">
+                <p>ReactJs Hooks</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
                 </div>
-                <!-- /.progress-group -->
-                <div class="progress-group">
-                  <p>ReactJs Hooks</p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      data-transitiongoal="80"
-                    ></div>
-                  </div>
-                  <!-- /.progress -->
-                </div>
-                <!-- /.progress-group -->
-                <div class="progress-group">
-                  <p>Laravel</p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      data-transitiongoal="85"
-                    ></div>
-                  </div>
-                  <!-- /.progress -->
-                </div>
-                <!-- /.progress-group -->
-              </div>
-
-              <div class="center">
-                <div class="rectangle">
-                  <span class="localization" data-local="Mehr">More</span>
-                </div>
+                <!-- /.progress -->
               </div>
             </div>
-          </div>
-        </div>
+            <!-- /.end web -->
 
-        <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
-          <h2 class="localization" data-local="BILDUNG">EDUCATION</h2>
-          <p class="section-subtitle">
-            <span class="localization" data-local="Meine Zertifikate"
-              >My Certificates</span
-            >
-          </p>
-          <!-- Certificate start -->
-          <div class="certificates" id="certificates">
-            <div class="certificate-grid">
-              <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <span>
-                    <p class="certificate-text-title">Front-End</p>
-                    <p
-                      class="certificate-text localization"
-                      data-local="8 Zertifikate von coursera"
-                    >
-                      8 certificates from coursera
-                    </p>
-                    <button
-                      onclick="showCertificates('Front-End')"
-                      target="_blank"
-                      class="rectangle btn"
-                    >
-                      <span class="localization" data-local="Schau mal">
-                        view
-                      </span>
-                    </button>
-                  </span>
+            <!-- technical skills  -->
+            <div id="item3" class="item tab-pane">
+              <h2>technical skills</h2>
+              <p class="localization"
+                data-local="Meine technischen Fähigkeiten umfassen ein breites Spektrum an Tools und Technologien, die für die moderne Entwicklung und Bereitstellung unerlässlich sind. Ich beherrsche die Versionskontrolle mit Git, die Serververwaltung unter Linux und die Konfiguration von Webservern wie Nginx und Apache. Ich habe auch Erfahrung mit der Containerisierung mithilfe von Docker und der Leistungsoptimierung mit Redis.">
+                My technical skills encompass a wide range of tools and technologies essential for modern development
+                and deployment. I am proficient in version control with Git, server management using Linux, and
+                configuring web servers like Nginx and Apache. I also have experience with containerization using Docker
+                and optimizing performance with Redis.
+              </p>
+              <div class="progress-group">
+                <p>Git</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
                 </div>
+                <!-- /.progress -->
               </div>
-              <!-- certificate-item -->
+              <!-- /.progress-group -->
 
-              <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <span>
-                    <p class="certificate-text-title">Back-End</p>
-                    <p
-                      class="certificate-text localization"
-                      data-local="9 Zertifikate von coursera"
-                    >
-                      9 certificates from coursera
-                    </p>
-                    <button
-                      onclick="showCertificates('Back-End')"
-                      target="_blank"
-                      class="rectangle btn"
-                    >
-                      <span class="localization" data-local="Schau mal">
-                        view
-                      </span>
-                    </button>
-                  </span>
+              <div class="progress-group">
+                <p>Linux</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
                 </div>
+                <!-- /.progress -->
               </div>
-              <!-- certificate-item -->
+              <!-- /.progress-group -->
 
-              <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <span>
-                    <p class="certificate-text-title">Flutter</p>
-                    <p
-                      class="certificate-text localization"
-                      data-local="9 Zertifikate"
-                    >
-                      9 certificates
-                    </p>
-                    <button
-                      onclick="showCertificates('Flutter')"
-                      target="_blank"
-                      class="rectangle btn"
-                    >
-                      <span class="localization" data-local="Schau mal">
-                        view
-                      </span>
-                    </button>
-                  </span>
+              <div class="progress-group">
+                <p>Docker</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
                 </div>
+                <!-- /.progress -->
               </div>
-              <!-- certificate-item -->
+              <!-- /.progress-group -->
 
-              <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <span>
-                    <p class="certificate-text-title">ReactJS</p>
-                    <p
-                      class="certificate-text localization"
-                      data-local="Zertifikat von udemy"
-                    >
-                      certificate from udemy
-                    </p>
-                    <a
-                      href="https://www.udemy.com/certificate/UC-b08c3637-67c9-4448-af39-69c45d74fc42/"
-                      class="rectangle btn"
-                      target="_blank"
-                      ><span class="localization" data-local="Schau mal">
-                        view
-                      </span></a
-                    >
-                  </span>
-                </div>
-              </div>
-              <!-- certificate-item -->
 
-              <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <span>
-                    <p class="certificate-text-title">PHP&SQL</p>
-                    <p
-                      class="certificate-text localization"
-                      data-local="Zertifikat von udemy"
-                    >
-                      certificate from udemy
-                    </p>
-                    <a
-                      href="https://www.udemy.com/certificate/UC-64a66b6d-0a5f-4693-97d8-190905044899/"
-                      class="rectangle btn"
-                      target="_blank"
-                      ><span class="localization" data-local="Schau mal">
-                        view
-                      </span></a
-                    >
-                  </span>
+              <div class="progress-group">
+                <p>Unit Testing</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
                 </div>
+                <!-- /.progress -->
               </div>
-              <!-- certificate-item -->
+              <!-- /.progress-group -->
 
-              <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
-                <div class="medium-rectangle rectangle">
-                  <span>
-                    <p class="certificate-text-title">Laravel</p>
-                    <p
-                      class="certificate-text localization"
-                      data-local="Zertifikat von udemy"
-                    >
-                      certificate from udemy
-                    </p>
-                    <a
-                      href="https://www.udemy.com/certificate/UC-4df1195e-5bf1-4930-9b08-83eb9a5964b8/"
-                      class="rectangle btn"
-                      target="_blank"
-                      ><span class="localization" data-local="Schau mal">
-                        view
-                      </span></a
-                    >
-                  </span>
+              <div class="progress-group">
+                <p>Apache / Nginx</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
                 </div>
+                <!-- /.progress -->
               </div>
-              <!-- certificate-item -->
+
+              <div class="progress-group">
+                <p>Redis</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.progress-group -->
             </div>
           </div>
-          <!-- Certificate End -->
+          <!-- /.end technical skills -->
+
         </div>
-      </section>
-      <!-- /.section-skills -->
-      <!-- End Skills section -->
+        <!-- /.carousel-inner -->
+      </div>
+    </section>
 
-      <!-- companies section -->
-      <section class="site-section companies" id="companies">
-        <div class="container">
-          <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
-            <h2 class="localization" data-local="Meine Erfahrung">
-              My Experience
-            </h2>
-            <p class="section-subtitle">
-              <span
-                class="localization"
-                data-local="Unternehmen, für die ich gearbeitet habe "
-                >Companies I Worked For</span
-              >
-            </p>
-          </div>
+    <!----------------------------- My Languages section --------------------------- -->
+    <section class="site-section section-skills">
+      <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
+        <h2 class="localization" data-local="sprachen">Languages</h2>
+        <p class="section-subtitle">
+          <span class="localization" data-local="Dass ich spreche">That I Speak</span>
+        </p>
+      </div>
+      <div class="container">
+        <div class="about-me wow zoomIn" data-wow-delay="0.1s">
+          <div class="my-languages">
+            <div class="my-language wow slideInUp" data-wow-delay="0.2s">
+              <div class="precentage" data-precentage="95%">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewbox="0 0 100 100">
+                  <path class="grey" d="M40,90
+                                                                     A40,40 0 1,1 60,90" style="fill: none" />
 
-          <div class="companies-grid">
-            <!-- Start company item -->
-            <div class="company-item">
-              <img
-                class="company-img"
-                src="assets/img/projects/cloudsZone/logo.png"
-                alt="Card image cap"
-              />
-              <div class="company-body">
-                <h5 class="company-title">CloudsZone</h5>
-                <p class="company-position">Flutter & Laravel Developer</p>
-                <small class="company-small">2022/4 - 2023/10</small>
-                <p class="company-text localization" data-local="
-                Cloud Zone ist ein Unternehmen für Softwareberatung
-                Sitz in Saudi-Arabien. Ich arbeite seit einem Jahr und halb für dieses Unternehmen
-                und Ich habe viel Erfahrung gesammelt, ich habe als
-                Flutter-Entwickler und Laravel-Entwickler gearbeitet, ich und
-                Das professionelle Team des Unternehmens entwickelte mobile Apps
-                mit Flutter und erstellen wir unsere eigene API mit Laravel">
-                  Cloud zone is a company for software consulting , it is
-                  located in saudi Arabia I have worked at this company for year
-                  and a half and collected a lot of experience, I worked as a
-                  Flutter Developer and Laravel Developer, me and the
-                  professional team of the company were developing mobile apps
-                  with Flutter and make our own API with Laravel
+                  <path class="color ar" d="M40,90
+                                                                     A40,40 0 1,1 60,90" style="fill: none" />
+                </svg>
+              </div>
+              <div class="my-language-text">
+                <h3 class="localization" data-local="Arabisch">Arabic</h3>
+                <p class="localization" data-local="Muttersprachler">
+                  Native Speaker
                 </p>
-                <a href="https://cloudszone.net/" class="btn btn-primary">Website</a>
               </div>
             </div>
-            <!-- end company item -->
-          </div>
-        </div>
-      </section>
-      <!-- End Company section -->
+            <div class="my-language wow slideInUp" data-wow-delay="0.4s">
+              <div class="precentage" data-precentage="90%">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewbox="0 0 100 100">
+                  <path class="grey" d="M40,90
+                                                                       A40,40 0 1,1 60,90" style="fill: none" />
 
-      <!-- History section -->
-      <section class="site-section section-history" id="history">
-        <div class="container">
-          <div
-            class="text-center section-diff-title wow zoomIn"
-            data-wow-delay="0.2s"
-          >
-            <h2
-              class="localization"
-              data-local="Ein Blick zurück auf meine Geschichte"
-            >
-              A Look Back At My History
-            </h2>
-            <p class="section-subtitle">
-              <span class="localization" data-local="Das ist meine Erfahrung">
-                This is my Experience
-              </span>
-            </p>
-          </div>
-          <!-- Timeline -->
-          <ul class="timeline">
-            <div class="timeline-item wow" data-wow-delay="0.1s">
-              <!-- /.timeline-start -->
-              <li class="timeline-start">
-                <div class="rectangle"><span>2024</span></div>
-              </li>
-              <!-- /.timeline-end -->
-              <!-- Timeline job & description  -->
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>MAY</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Flutter / LordsBox</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/lordsbox/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe ein App für ein Transport unternehmen erstellt"
-                    >
-                      I Have Built An App For A Goods transportation company
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-
-            <!-- Timeline badge -->
-            <div class="timeline-item wow" data-wow-delay="0.1s">
-              <!-- /.timeline-start -->
-              <li li class="timeline-start">
-                <div class="rectangle"><span>2023</span></div>
-              </li>
-              <!-- Timeline job & description  -->
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>mar</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Work In A Company / CloudsZone</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/cloudsZone/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe angefangen in einem Unternehmen zu arbeiten"
-                    >
-                      I Started To Work In A Company
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-
-            <div class="timeline-item wow" data-wow-delay="0.1s">
-              <!-- /.timeline-start -->
-              <!-- Timeline job & description  -->
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>jan</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Flutter App / Pharmacy</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/Pharmacy/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe eine App für eine Lokale Apotheke erstellt"
-                    >
-                      I Have Built An App For A Local Pharmacy
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-
-            <!-- Timeline badge -->
-            <div class="timeline-item wow" data-wow-delay="0.1s">
-              <!-- /.timeline-start -->
-              <!-- Timeline badge -->
-              <li li class="timeline-start">
-                <div class="rectangle"><span>2022</span></div>
-              </li>
-              <!-- Timeline job & description  -->
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>oct</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>WebSite / Rada</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/rada/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe eine Website-App für einen Kunden erstellt"
-                    >
-                      I Have Built A WebSite App For A Cleint
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-
-            <div class="timeline-item wow" data-wow-delay="0.2s">
-              <!-- Timeline job & description, inverted  -->
-              <li class="">
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>jul</p>
-                    </div>
-                    <div class="timeline-position">
-                      <p>Android & Desktop App / Cabels</p>
-                    </div>
-                    <!-- /.timeline-position -->
-
-                    <!-- /.timeline-date -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/cables/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe eine Android- und Desktop-App für einen Cleint erstellt"
-                    >
-                      I Have Built An Android And Desktop App For A Cleint
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-              <!-- /.timeline-inverted -->
-            </div>
-
-            <div class="timeline-item wow" data-wow-delay="0.2s">
-              <!-- Timeline job & description  -->
-
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>Mar</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Android App / Interpolation</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/interpolation/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe das Interpolation projekt für meine Universität gemacht"
-                    >
-                      I Have Made The Interpolation Project For My University
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-            <div class="timeline-item wow" data-wow-delay="0.2s">
-              <!-- Timeline job & description  -->
-              <!-- Timeline badge -->
-
-              <!-- Timeline job & description  -->
-              <li li class="timeline-start">
-                <div class="rectangle"><span>2021</span></div>
-              </li>
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-
-                <div class="rectangle timeline-rectangle"></div>
-
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>APR</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Android App / X-POSITRON</p>
-                    </div>
-
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/X-POSITRON/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe eine Android-Anwendung für mein College erstellt"
-                    >
-                      I Have Made An Android Application For My College
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-            <div class="timeline-item wow" data-wow-delay="0.2s">
-              <li class="timeline-inverted">
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>Jan</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Game Dev / X_O Game</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/X-O/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe ein einfaches Tic Tac Toe-Spiel entwickelt"
-                    >
-                      I Develped A Simple Tic Tac Toe Game
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-            <div class="timeline-item wow" data-wow-delay="0.2s">
-              <!-- Timeline job & description  -->
-              <li li class="timeline-start">
-                <div class="rectangle"><span>2020</span></div>
-              </li>
-              <li>
-                <div class="rectangle timeline-rectangle"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <div class="timeline-date">
-                      <p>Feb</p>
-                    </div>
-                    <!-- /.timeline-date -->
-                    <div class="timeline-position">
-                      <p>Web App / X-POSITRON</p>
-                    </div>
-                    <!-- /.timeline-position -->
-                  </div>
-                  <!-- /.timeline-heading -->
-                  <div class="timeline-body">
-                    <div class="timeline-body-thumb">
-                      <img
-                        src="assets/img/projects/X-POSITRON/logo.png"
-                        class="img-res"
-                        alt=""
-                      />
-                    </div>
-                    <!-- /.timeline-body-thumb -->
-                    <p
-                      class="localization"
-                      data-local="Ich habe eine Webanwendung für meine Hochschule erstellt"
-                    >
-                      I Have Made A Web Application For My College
-                    </p>
-                  </div>
-                  <!-- /.timeline-body -->
-                </div>
-                <!-- /.timeline-panel -->
-              </li>
-            </div>
-
-            <!-- Timeline Badge  -->
-            <li class="timeline-end wow slideInUp" data-wow-delay="0.2s">
-              <div class="rectangle">
-                <span class="localization" data-local="Mehr">More</span>
+                  <path class="color en" d="M40,90
+                                                                       A40,40 0 1,1 60,90" style="fill: none" />
+                </svg>
               </div>
-            </li>
-            <!-- /.timeline-end -->
-          </ul>
-          <!-- /.timeline -->
-        </div>
-      </section>
-      <!-- /.section-history -->
-      <!-- End History section -->
+              <div class="my-language-text">
+                <h3 class="localization" data-local="Englisch">English</h3>
+                <p class="localization" data-local="fließend sprechend , Studierte an der Universität">
+                  fluent speaker , Studied at university
+                </p>
+              </div>
+            </div>
+            <div class="my-language wow slideInUp" data-wow-delay="0.6s">
+              <div class="precentage" data-precentage="70%">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewbox="0 0 100 100">
+                  <path class="grey" d="M40,90
+                                                                       A40,40 0 1,1 60,90" style="fill: none" />
 
-      <!-- Services section -->
-      <section class="site-section section-services" id="services">
+                  <path class="color de" d="M40,90
+                                                                       A40,40 0 1,1 60,90" style="fill: none" />
+                </svg>
+              </div>
+              <div class="my-language-text">
+                <h3 class="localization" data-local="Deutsch">German</h3>
+                <p class="localization" data-local="B1 , selbst gelernt">
+                  B1 , self-learned
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End My Languages section -->
+
+    <!-- Companies section -->
+    <section class="site-section companies" id="companies">
+      <div class="container">
         <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
-          <h2 class="localization" data-local="MEINE DIENSTLEISTUNGEN">
-            MY SERVICES
+          <h2 class="localization" data-local="Meine Erfahrung">
+            My Experience
           </h2>
           <p class="section-subtitle">
-            <span
-              class="localization"
-              data-local="Außergewöhnliches Serviceniveau"
-              >Exceptional level of service</span
-            >
+            <span class="localization" data-local="Unternehmen, für die ich gearbeitet habe ">Companies I Worked
+              For</span>
           </p>
         </div>
 
-        <div class="container">
-          <div
-            class="carousel slide wow slideInUp"
-            data-wow-delay="0.2s"
-            id="services-carousel"
-          >
-            <div class="item-controls text-center">
-              <a
-                href="#services-carousel"
-                class="left btn carousel-control"
-                data-slide="prev"
-                ><i class="fa fa-angle-left" aria-hidden="true"></i>
-              </a>
-              <a
-                href="#services-carousel"
-                class="right btn carousel-control"
-                data-slide="next"
-                ><i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a>
+        <div class="companies-content">
+          <!-- Company start -->
+          <div class="company wow slideInUp" data-wow-delay="0.2s">
+            <div class="company-info">
+              <div class="company-info-data">
+                <h5 class="company-title">Peaklink</h5>
+                <small class="company-date">2024/2 - 2024/7</small>
+              </div>
+              <img loading="lazy" class="company-img" src="assets/img/projects/peaklink/logo.jpg" alt="peaklink logo" />
             </div>
-            <!-- /.item-controls -->
 
-            <div class="carousel-indicators nav-tabs text-center">
-              <a
-                data-target="#services-carousel"
-                href="#"
-                data-slide-to="0"
-                class="active"
-              >
-                <div class="col-xs-4 col-sm-fifth">
-                  <div class="service">
-                    <div class="rectangle">
-                      <i class="fa-regular fa-file-code"></i>
-                    </div>
-                    <p
-                      class="hidden-xs localization"
-                      data-local="WEB ENTWICKLUNG"
-                    >
-                      WEB DEVELOPMENT
-                    </p>
-                  </div>
-                </div> </a
-              ><!-- /.item -->
-              <a data-target="#services-carousel" href="#" data-slide-to="1">
-                <div class="col-xs-4 col-sm-fifth">
-                  <div class="service">
-                    <div class="rectangle">
-                      <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <p
-                      class="hidden-xs localization"
-                      data-local="ENTWICKLUNG MOBILER APPS"
-                    >
-                      MOBILE APPS DEVELOPMENT
-                    </p>
-                  </div>
-                </div> </a
-              ><!-- /.item -->
-              <a data-target="#services-carousel" href="#" data-slide-to="2">
-                <div class="col-xs-4 col-sm-fifth">
-                  <div class="service">
-                    <div class="rectangle">
-                      <i class="fa-solid fa-server"></i>
-                    </div>
-                    <p
-                      class="hidden-xs localization"
-                      data-local="BACK-END ENTWICKLUNG"
-                    >
-                      BACK-END DEVELOPMENT
-                    </p>
-                  </div>
-                </div> </a
-              ><!-- /.item -->
-              <a data-target="#services-carousel" href="#" data-slide-to="3">
-                <div class="col-xs-4 col-sm-fifth">
-                  <div class="service">
-                    <div class="rectangle">
-                      <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <p
-                      class="hidden-xs localization"
-                      data-local="DESKTOP ENTWICKLUNG"
-                    >
-                      DESKTOP DEVELOPMENT
-                    </p>
-                  </div>
-                </div> </a
-              ><!-- /.item -->
+            <div class="job-info">
+              <div class="job-title localization" data-local="Full-Stack-Entwickler">Full Stack Developer</div>
+              <div class="job-type localization" data-local="Vollzeit">Full Time</div>
+              <div class="job-desc localization" data-local="Als Back-End-Entwickler bei Peaklink in Syrien habe ich an verschiedenen Plattformen gearbeitet,
+              einschließlich Web- und Mobilanwendungen, um APIs mit Laravel und Node.js zu entwickeln und vorzubereiten.
+              Darüber hinaus habe ich durch die enge Zusammenarbeit mit Front-End Schritte unternommen, um ein Full-Stack-Entwickler zu werden
+              Entwickler. Ich habe Front-End-Frameworks wie Livewire, Filament und Blade in das Back-End integriert
+              Systeme zur Bereitstellung hochwertiger, reaktionsfähiger Websites und Dashboards.">As a Back-End
+                Developer at Peaklink in Syria, I worked on various platforms,
+                including web and mobile applications, to develop and prepare APIs using Laravel and Node.js.
+                Additionally, I took steps to become a Full-Stack Developer by closely collaborating with Front-End
+                developers. I integrated front-end frameworks such as Livewire, Filament, and Blade with back-end
+                systems to deliver high-quality, responsive websites and dashboards.</div>
+              <a href="https://peaklink.sy/" target="_blank" class="btn btn-primary localization"
+                data-local="Webseite">Website</a>
+
             </div>
-            <!-- /.carousel-indicators -->
+          </div>
+          <!-- Company end -->
 
-            <div class="carousel-inner">
-              <!-- Item 1 -->
-              <div id="item1" class="item tab-pane active">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="service-info">
-                      <h3
-                        class="service-title localization"
-                        data-local="Web ENTWICKLUNG"
-                      >
-                        Web Development
-                      </h3>
-                      <p
-                        class="localization"
-                        data-local="Als Webentwickler verfüge ich über vielfältige Fähigkeiten
-                die es mir ermöglichen, dynamische Websites zu erstellen.
-                Meine Kenntnisse in HTML, CSS, JavaScript und jQuery
-                ermöglicht es mir, optisch ansprechendes Design zu erstellen
-                Websites, die für das Benutzererlebnis optimiert sind.
-                Darüber hinaus meine Erfahrung mit verschiedenen Inhalten
-                Managementsysteme wie WordPress ermöglichen es mir
-                Website-Inhalte effizient verwalten und sicherstellen
-                Genauigkeit. Darüber hinaus habe ich Erfahrung in der Zusammenarbeit mit
-                verschiedene Webentwicklungs-Frameworks wie ReactJS und
-                Node.js. Dieses Fachwissen ermöglicht es mir, komplexe Entwicklungen durchzuführen
-                Webanwendungen, die hochgradig interaktiv sind und
-                reaktionsschnell."
-                      >
-                        As a web developer, I possess a diverse set of skills
-                        that enable me to create dynamic and engaging websites.
-                        My proficiency in HTML, CSS, JavaScript, and jQuery
-                        allows me to design visually appealing and responsive
-                        websites that are optimized for user experience.
-                        Additionally, my experience with various content
-                        management systems such as WordPress enables me to
-                        efficiently manage website content and ensure its
-                        accuracy. Furthermore, I have experience working with
-                        various web development frameworks such as ReactJS, and
-                        Node.js. This expertise enables me to develop complex
-                        web applications that are highly interactive and
-                        responsive.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-7">
-                    <img
-                      src="assets/img/web-development.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </div>
+          <!-- Company start -->
+          <div class="company wow slideInUp" data-wow-delay="0.2s">
+            <div class="company-info">
+              <div class="company-info-data">
+                <h5 class="company-title">CloudsZone</h5>
+                <small class="company-date">2022/4 - 2023/10</small>
               </div>
-              <!-- /.item -->
-              <!-- Item 2 -->
-              <div id="item2" class="item tab-pane">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="service-info">
-                      <h3
-                        class="service-title localization"
-                        data-local="ENTWICKLUNG MOBILER APPS"
-                      >
-                        MOBILE APPS DEVELOPMENT
-                      </h3>
-                      <p
-                        class="localization"
-                        data-local="Bin ein erfahrener mobiler Entwickler, der darüber aufgewacht ist
-                Feld Seit 2020 mit Flutter-Framework Wenn Sie nach einem suchen
-                hochqualifizierter und erfahrener mobiler Experte mit a
-                tiefes Verständnis, eine professionelle Einstellung, ausgezeichnet
-                Kommunikationsfähigkeiten und höchste Codequalität also
-                Ich bin die Person, die Sie suchen. Seit 2020 habe ich
-                viele Apps aus verschiedenen Bereichen für Android erstellt und
-                Flutter-Apps. Grundsätze Als freelancer sind Sie großartig
-                Wir sind stolz darauf, sicherzustellen, dass alle Projekte den Wünschen des Kunden entsprechen
-                Zufriedenheit, Einhaltung aller Termine und Qualität
-                Die Sicherheit wird sorgfältig geprüft. Kunde platzieren
-                Zufriedenheit steht an erster Stelle und wir werden uns dafür einsetzen
-                sorgen für Kundenzufriedenheit. Darüber hinaus versprechen Sie es
-                liefern Sie immer ehrliche und schnelle Dienstleistungen."
-                      >
-                        Am a skilled Mobile Developer who has woked at this
-                        field Since 2020 with Flutter framework If looking for a
-                        highly skilled and rich experienced mobile expert with a
-                        deep knowledge, a professional attitude, excellent
-                        communication skills and the highest code quality, then
-                        I'm the person you are looking for. Since 2020 I've
-                        built many apps of several fields for Android and
-                        Flutter apps. Principles As a freelancer, take great
-                        pride in making sure all of projects are up to client's
-                        satisfaction, all deadlines are met and quality
-                        assurance is carefully considered. Place customer
-                        satisfaction above all, and will bend over backwards to
-                        ensure customer satisfaction. In addition, promise to
-                        always deliver honest and speedy services.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-7">
-                    <img
-                      src="assets/img/mobile-development.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- /.item -->
-              <!-- Item 3 -->
-              <div id="item3" class="item tab-pane">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="service-info">
-                      <h3
-                        class="service-title localization"
-                        data-local="BACK-END ENTWICKLUNG"
-                      >
-                        BACK-END DEVELOPMENT
-                      </h3>
-                      <p
-                        class="localization"
-                        data-local="Ich kenne mich gut mit serverseitigen Programmiersprachen aus
-                wie PHP Laravel und Python, was mir das ermöglicht
-                Entwickeln Sie robuste Webanwendungen, die sicher und skalierbar sind.
-                 Meine Kenntnisse über Datenbasemanagementsysteme
-                wie MySQL und MongoDB ermöglichen mir ein effizientes Design
-                Datenstrukturen, die große Datenmengen verarbeiten können
-                und erstellen Sie eine beliebige API."
-                      >
-                        I am well-versed in server-side programming languages
-                        such as PHP Laravel and Python, which enables me to
-                        develop robust web applications that are secure and
-                        scalable. My knowledge of database management systems
-                        such as MySQL and MongoDB allows me to design efficient
-                        data structures that can handle large amounts of data
-                        and build any API.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-7">
-                    <img
-                      src="assets/img/backend-development.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- /.item -->
-              <!-- Item 4 -->
-              <div id="item4" class="item tab-pane">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="service-info">
-                      <h3
-                        class="service-title localization"
-                        data-local="DESKTOP ENTWICKLUNG"
-                      >
-                        DESKTOP DEVELOPMENT
-                      </h3>
-                      <p
-                        class="localization"
-                        data-local="Ich habe Erfahrung im Entwerfen und Entwickeln von Schönheit
-                Desktop-Apps mit dem Flutter-Framework,wie ich mich entwickelt habe
-                Mehrere Desktop-Apps, bei denen es sich um aktualisierte Desktop-Designs handelt
-                ,Interaktiv mit Benutzern, reaktionsschnell und praktisch"
-                      >
-                        I have experience at Designing And Developing Beautiful
-                        Desktop Apps Using Flutter framework, ,as I developed
-                        several Desktop Apps That are Uptodated Desktop Themes
-                        ,Interactive With Users,Responsive and Practical
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-7">
-                    <img
-                      src="assets/img/desktop-development.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- /.item -->
+              <img loading="lazy" class="company-img" src="assets/img/projects/cloudsZone/logo.png"
+                alt="cloudsZone logo" />
             </div>
-            <!-- /.carousel-inner -->
-          </div>
-          <!-- /.carousel -->
-        </div>
-      </section>
-      <!-- /.section-services -->
-      <!-- End Services section -->
 
-      <!-- Portfolio/Works section -->
-      <section class="site-section section-works" id="works">
-        <div class="container">
-          <div class="wow zoomIn" data-wow-delay="0.2s">
-            <h2 class="localization" data-local="Meine Projekte">
-              My Projects
-            </h2>
-            <p class="section-subtitle">
-              <span class="localization" data-local="Meine berufliche Arbeit"
-                >My Professional Work</span
-              >
-            </p>
-          </div>
+            <div class="job-info">
+              <div class="job-title localization" data-local="Full-Stack-Entwickler">Full Stack Developer</div>
+              <div class="job-type">Remotely</div>
+              <div class="job-desc localization" data-local="Mit 1,5 Jahren Erfahrung als Back-End-Entwickler bei CloudZone in Saudi-Arabien bin ich
+              Ich habe meine Fähigkeiten im Aufbau und der Wartung robuster RESTful-APIs und serverseitiger Logik mithilfe von PHP und geschärft
+              Node.js. Bei CloudZone war ich für die Entwicklung und Bereitstellung komplexer Anwendungen und Dienste verantwortlich
+              die den hohen Datenverkehr bewältigten und für den Geschäftsbetrieb des Unternehmens, einschließlich der Inhalte, von entscheidender Bedeutung waren
+              Managementsysteme (CMS) und Enterprise-Resource-Planning-Systeme (ERP).">With 1.5 years of experience as
+                a Back-End Developer at CloudZone in Saudi Arabia, I
+                sharpened my skills in building and maintaining robust RESTful APIs and server-side logic using PHP and
+                Node.js. At CloudZone, I was responsible for developing and deploying complex applications and services
+                that managed high traffic and were crucial to the company’s business operations, including content
+                management systems (CMS) and enterprise resource planning (ERP) systems.</div>
+              <a href="https://cloudszone.net/" target="_blank" class="btn btn-primary localization"
+                data-local="Webseite">Website</a>
 
-          <div class="portfolio">
-            <ul
-              class="portfolio-sorting list-inline wow slideInLeft"
-              data-wow-delay="0.2s"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="active localization"
-                  data-local="Alle"
-                  data-group="all"
-                  >all</a
-                >
-              </li>
-              <li>
-                <a href="#" class="" data-group="flutter">Flutter Apps</a>
-              </li>
-              <li>
-                <a href="#" class="" data-group="web">Web Apps</a>
-              </li>
-              <li>
-                <a href="#" class="" data-group="desktop">Desktop apps</a>
-              </li>
-              <li>
-                <a href="#" class="" data-group="game">Game Dev</a>
-              </li>
-            </ul>
-            <!-- /.portfolio-sorting  -->
-
-            <div id="grid" class="wow slideInUp" data-wow-delay="0.2s">
-              <!-- Portfolio item -->
-              <div
-                class="col-md-3 col-sm-4 col-xs-6"
-                data-groups='["flutter","web"]'
-              >
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('lordsbox')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/lordsbox/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <div class="rectangle">
-                      <i class="fa fa-plus"></i>
-                    </div>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>LordsBox</h3>
-                    <p>Flutter Monitoring & Tracking System</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-
-              <!-- Portfolio item -->
-              <div
-                class="col-md-3 col-sm-4 col-xs-6"
-                data-groups='["web","flutter"]'
-              >
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('cloudsZone')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/cloudsZone/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <div class="rectangle">
-                      <i class="fa fa-plus"></i>
-                    </div>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>cloudsZone</h3>
-                    <p>Company</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-
-              <!-- Portfolio item -->
-              <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["flutter"]'>
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('pharmacy')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/Pharmacy/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <div class="rectangle">
-                      <i class="fa fa-plus"></i>
-                    </div>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>Pharmacy</h3>
-                    <p>Flutter App</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-
-              <!-- Portfolio item -->
-              <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["web"]'>
-                <div class="portfolio-item" onclick="navigateToAppPage('rada')">
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/rada/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <div class="rectangle">
-                      <i class="fa fa-plus"></i>
-                    </div>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>Rada</h3>
-                    <p>Web App</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-              <!-- /.col-md-3  -->
-              <!-- Portfolio item -->
-              <div
-                class="col-md-3 col-sm-4 col-xs-6"
-                data-groups='["flutter","desktop"]'
-              >
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('cables')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/cables/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <a
-                      href="#"
-                      class="rectangle"
-                      data-toggle="modal"
-                      data-target="#portfolioItem2"
-                    >
-                      <i class="fa fa-plus"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>Cables</h3>
-                    <p>Android-Desktop App</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-              <!-- /.col-md-3  -->
-              <!-- Portfolio item -->
-              <div
-                class="col-md-3 col-sm-4 col-xs-6"
-                data-groups='["flutter","web"]'
-              >
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('X-POSITRON')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/X-POSITRON/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <a
-                      href="#"
-                      class="rectangle"
-                      data-toggle="modal"
-                      data-target="#portfolioItem3"
-                    >
-                      <i class="fa fa-plus"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>X-POSITRON</h3>
-                    <p>Flutter-Web App</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-              <!-- /.col-md-3  -->
-              <!-- Portfolio item -->
-              <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["flutter"]'>
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('interpolation')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/interpolation/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <a
-                      href="#"
-                      class="rectangle"
-                      data-toggle="modal"
-                      data-target="#portfolioItem4"
-                    >
-                      <i class="fa fa-plus"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>Interpolation</h3>
-                    <p>Flutter App</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-              <!-- /.col-md-3  -->
-              <!-- Portfolio item -->
-              <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["game"]'>
-                <div
-                  class="portfolio-item"
-                  onclick="navigateToAppPage('X_O Game')"
-                >
-                  <div class="portfolio-item-thumb">
-                    <img
-                      src="assets/img/projects/X-O/logo.png"
-                      alt=""
-                      class="img-res"
-                    />
-                    <a
-                      href="#"
-                      class="rectangle"
-                      data-toggle="modal"
-                      data-target="#portfolioItem5"
-                    >
-                      <i class="fa fa-plus"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-item-thumb  -->
-                  <div class="portfolio-info">
-                    <h3>X-O</h3>
-                    <p>Game Dev</p>
-                  </div>
-                  <!-- /.portfolio-info  -->
-                </div>
-              </div>
-              <!-- /.col-md-3  -->
-              <!-- Portfolio item -->
-              <!-- /.col-md-3  -->
             </div>
-            <!-- /#grid -->
           </div>
-        </div>
-      </section>
-      <!-- /.section-works -->
-      <!-- End Works section -->
-
-      <!-- Reviews section -->
-      <section class="site-section section-reviews text-center" id="reviews">
-        <div class="container">
-          <div class="wow zoomIn" data-wow-delay="0.2s">
-            <h2 class="localization" data-local="Kundenre zensionen">
-              Client Reviews
-            </h2>
-            <p class="section-subtitle">
-              <span
-                class="localization"
-                data-local="UNSERE KUNDEN LIEBEN UNS! LESEN SIE, WAS SIE ZU SAGEN HABEN"
-                >OUR CLIENTS LOVE US! READ WHAT THEY HAVE TO SAY</span
-              >
-            </p>
-          </div>
+          <!-- Company end -->
         </div>
 
-        <div class="blue-bg wow zoomIn" data-wow-delay="0.2s">
-          <div class="container">
-            <div class="review-carousel">
-              <div class="review">
-                <p
-                  class="localization"
-                  data-local="Unsere Erfahrung mit
+      </div>
+    </section>
+    <!-- End Company section -->
+
+    <!-- Certificate start -->
+    <section class="certificates-section site-section" id="certificates">
+      <div class="container">
+        <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
+          <h2 class="localization" data-local="BILDUNG">
+            EDUCATION
+          </h2>
+          <p class="section-subtitle">
+            <span class="localization" data-local="Meine Zertifikate">My Certificates</span>
+          </p>
+        </div>
+        <div class="certificates">
+          <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
+            <div class="medium-rectangle rectangle">
+              <span>
+                <p class="certificate-text-title">Front-End</p>
+                <p class="certificate-text localization" data-local="8 Zertifikate von coursera">
+                  8 certificates from coursera
+                </p>
+                <button onclick="showCertificates('Front-End')" target="_blank" class="rectangle btn">
+                  <span class="localization" data-local="Schau mal">
+                    view
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <!-- certificate-item -->
+
+          <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
+            <div class="medium-rectangle rectangle">
+              <span>
+                <p class="certificate-text-title">Back-End</p>
+                <p class="certificate-text localization" data-local="9 Zertifikate von coursera">
+                  9 certificates from coursera
+                </p>
+                <button onclick="showCertificates('Back-End')" target="_blank" class="rectangle btn">
+                  <span class="localization" data-local="Schau mal">
+                    view
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <!-- certificate-item -->
+
+          <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
+            <div class="medium-rectangle rectangle">
+              <span>
+                <p class="certificate-text-title">Flutter</p>
+                <p class="certificate-text localization" data-local="9 Zertifikate">
+                  9 certificates
+                </p>
+                <button onclick="showCertificates('Flutter')" target="_blank" class="rectangle btn">
+                  <span class="localization" data-local="Schau mal">
+                    view
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <!-- certificate-item -->
+
+          <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
+            <div class="medium-rectangle rectangle">
+              <span>
+                <p class="certificate-text-title">ReactJS</p>
+                <p class="certificate-text localization" data-local="Zertifikat von udemy">
+                  certificate from udemy
+                </p>
+                <a href="https://www.udemy.com/certificate/UC-b08c3637-67c9-4448-af39-69c45d74fc42/"
+                  class="rectangle btn" target="_blank"><span class="localization" data-local="Schau mal">
+                    view
+                  </span></a>
+              </span>
+            </div>
+          </div>
+          <!-- certificate-item -->
+
+          <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
+            <div class="medium-rectangle rectangle">
+              <span>
+                <p class="certificate-text-title">PHP&SQL</p>
+                <p class="certificate-text localization" data-local="Zertifikat von udemy">
+                  certificate from udemy
+                </p>
+                <a href="https://www.udemy.com/certificate/UC-64a66b6d-0a5f-4693-97d8-190905044899/"
+                  class="rectangle btn" target="_blank"><span class="localization" data-local="Schau mal">
+                    view
+                  </span></a>
+              </span>
+            </div>
+          </div>
+          <!-- certificate-item -->
+
+          <div class="certificate-item wow slideInUp" data-wow-delay="0.2s">
+            <div class="medium-rectangle rectangle">
+              <span>
+                <p class="certificate-text-title">Laravel</p>
+                <p class="certificate-text localization" data-local="Zertifikat von udemy">
+                  certificate from udemy
+                </p>
+                <a href="https://www.udemy.com/certificate/UC-4df1195e-5bf1-4930-9b08-83eb9a5964b8/"
+                  class="rectangle btn" target="_blank"><span class="localization" data-local="Schau mal">
+                    view
+                  </span></a>
+              </span>
+            </div>
+          </div>
+          <!-- certificate-item -->
+        </div>
+      </div>
+
+    </section>
+    <!-- Certificates End -->
+
+    <!-- History section -->
+    <section class="site-section section-history" id="history">
+      <div class="container">
+        <div class="text-center section-diff-title wow zoomIn" data-wow-delay="0.2s">
+          <h2 class="localization" data-local="Ein Blick zurück auf meine Geschichte">
+            A Look Back At My History
+          </h2>
+          <p class="section-subtitle">
+            <span class="localization" data-local="Das ist meine Erfahrung">
+              This is my Experience
+            </span>
+          </p>
+        </div>
+        <!-- Timeline -->
+        <ul class="timeline">
+          <div class="timeline-item wow" data-wow-delay="0.1s">
+            <!-- /.timeline-start -->
+            <li class="timeline-start">
+              <div class="rectangle"><span>2024</span></div>
+            </li>
+            <!-- /.timeline-end -->
+            <!-- Timeline job & description  -->
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>MAY</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Flutter / LordsBox</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/lordsbox/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe ein App für ein Transport unternehmen erstellt">
+                    I Have Built An App For A Goods transportation company
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+
+          <!-- Timeline badge -->
+          <div class="timeline-item wow" data-wow-delay="0.1s">
+            <!-- /.timeline-start -->
+            <li li class="timeline-start">
+              <div class="rectangle"><span>2023</span></div>
+            </li>
+            <!-- Timeline job & description  -->
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>mar</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Work In A Company / CloudsZone</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/cloudsZone/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe angefangen in einem Unternehmen zu arbeiten">
+                    I Started To Work In A Company
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+
+          <div class="timeline-item wow" data-wow-delay="0.1s">
+            <!-- /.timeline-start -->
+            <!-- Timeline job & description  -->
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>jan</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Flutter App / Pharmacy</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/Pharmacy/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe eine App für eine Lokale Apotheke erstellt">
+                    I Have Built An App For A Local Pharmacy
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+
+          <!-- Timeline badge -->
+          <div class="timeline-item wow" data-wow-delay="0.1s">
+            <!-- /.timeline-start -->
+            <!-- Timeline badge -->
+            <li li class="timeline-start">
+              <div class="rectangle"><span>2022</span></div>
+            </li>
+            <!-- Timeline job & description  -->
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>oct</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>WebSite / Rada</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/rada/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe eine Website-App für einen Kunden erstellt">
+                    I Have Built A WebSite App For A Cleint
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+
+          <div class="timeline-item wow" data-wow-delay="0.2s">
+            <!-- Timeline job & description, inverted  -->
+            <li class="">
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>jul</p>
+                  </div>
+                  <div class="timeline-position">
+                    <p>Android & Desktop App / Cabels</p>
+                  </div>
+                  <!-- /.timeline-position -->
+
+                  <!-- /.timeline-date -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/cables/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe eine Android- und Desktop-App für einen Cleint erstellt">
+                    I Have Built An Android And Desktop App For A Cleint
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+            <!-- /.timeline-inverted -->
+          </div>
+
+          <div class="timeline-item wow" data-wow-delay="0.2s">
+            <!-- Timeline job & description  -->
+
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>Mar</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Android App / Interpolation</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/interpolation/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe das Interpolation projekt für meine Universität gemacht">
+                    I Have Made The Interpolation Project For My University
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+          <div class="timeline-item wow" data-wow-delay="0.2s">
+            <!-- Timeline job & description  -->
+            <!-- Timeline badge -->
+
+            <!-- Timeline job & description  -->
+            <li li class="timeline-start">
+              <div class="rectangle"><span>2021</span></div>
+            </li>
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+
+              <div class="rectangle timeline-rectangle"></div>
+
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>APR</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Android App / X-POSITRON</p>
+                  </div>
+
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/X-POSITRON/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe eine Android-Anwendung für mein College erstellt">
+                    I Have Made An Android Application For My College
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+          <div class="timeline-item wow" data-wow-delay="0.2s">
+            <li class="timeline-inverted">
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>Jan</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Game Dev / X_O Game</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/X-O/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe ein einfaches Tic Tac Toe-Spiel entwickelt">
+                    I Develped A Simple Tic Tac Toe Game
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+          <div class="timeline-item wow" data-wow-delay="0.2s">
+            <!-- Timeline job & description  -->
+            <li li class="timeline-start">
+              <div class="rectangle"><span>2020</span></div>
+            </li>
+            <li>
+              <div class="rectangle timeline-rectangle"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <div class="timeline-date">
+                    <p>Feb</p>
+                  </div>
+                  <!-- /.timeline-date -->
+                  <div class="timeline-position">
+                    <p>Web App / X-POSITRON</p>
+                  </div>
+                  <!-- /.timeline-position -->
+                </div>
+                <!-- /.timeline-heading -->
+                <div class="timeline-body">
+                  <div class="timeline-body-thumb">
+                    <img loading="lazy" src="assets/img/projects/X-POSITRON/logo.png" class="img-res" alt="" />
+                  </div>
+                  <!-- /.timeline-body-thumb -->
+                  <p class="localization" data-local="Ich habe eine Webanwendung für meine Hochschule erstellt">
+                    I Have Made A Web Application For My College
+                  </p>
+                </div>
+                <!-- /.timeline-body -->
+              </div>
+              <!-- /.timeline-panel -->
+            </li>
+          </div>
+
+          <!-- Timeline Badge  -->
+          <li class="timeline-end wow slideInUp" data-wow-delay="0.2s">
+            <div class="rectangle">
+              <span class="localization" data-local="Mehr">More</span>
+            </div>
+          </li>
+          <!-- /.timeline-end -->
+        </ul>
+        <!-- /.timeline -->
+      </div>
+    </section>
+    <!-- /.section-history -->
+    <!-- End History section -->
+
+    <!-- Portfolio/Works section -->
+    <section class="site-section section-works" id="works">
+      <div class="container">
+        <div class="wow zoomIn" data-wow-delay="0.2s">
+          <h2 class="localization" data-local="Meine Projekte">
+            My Projects
+          </h2>
+          <p class="section-subtitle">
+            <span class="localization" data-local="Meine berufliche Arbeit">My Professional Work</span>
+          </p>
+        </div>
+
+        <div class="portfolio">
+          <ul class="portfolio-sorting list-inline wow slideInLeft" data-wow-delay="0.2s">
+            <li>
+              <a href="#" class="active localization" data-local="Alle" data-group="all">all</a>
+            </li>
+          </ul>
+          <!-- /.portfolio-sorting  -->
+
+          <div id="grid" class="wow slideInUp" data-wow-delay="0.2s">
+
+          </div>
+          <!-- /#grid -->
+          <div class="rectangle portfolio-more-btn">
+            <span class="localization" data-local="Mehr">More</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section-works -->
+    <!-- End Works section -->
+
+    <!-- Reviews section -->
+    <section class="site-section section-reviews text-center" id="reviews">
+      <div class="container">
+        <div class="wow zoomIn" data-wow-delay="0.2s">
+          <h2 class="localization" data-local="Kundenre zensionen">
+            Client Reviews
+          </h2>
+          <p class="section-subtitle">
+            <span class="localization" data-local="UNSERE KUNDEN LIEBEN UNS! LESEN SIE, WAS SIE ZU SAGEN HABEN">OUR
+              CLIENTS LOVE US! READ WHAT THEY HAVE TO SAY</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="blue-bg wow zoomIn" data-wow-delay="0.2s">
+        <div class="container">
+          <div class="review-carousel">
+            <div class="review">
+              <p class="localization" data-local="Unsere Erfahrung mit
                 Der Kundenservice war großartig. Sie gehen sehr gut mit den Dingen um
                 effizient und stehen für alle Fragen zur Verfügung. Sie
                 Halten Sie uns auch über monatliche Berichte auf dem Laufenden, damit wir wissen, wie es uns geht
-                Website tut."
-                >
-                  Our experience with the customer service has been great. They
-                  handle things very efficiently and are available for any
-                  questions we have. They also keep us updated on monthly
-                  reports so we know how our site is doing.
-                </p>
-                <div class="review-author"></div>
-                <!-- /.review-author -->
-              </div>
-              <!-- /.review -->
+                Website tut.">
+                Our experience with the customer service has been great. They
+                handle things very efficiently and are available for any
+                questions we have. They also keep us updated on monthly
+                reports so we know how our site is doing.
+              </p>
+              <div class="review-author"></div>
+              <!-- /.review-author -->
+            </div>
+            <!-- /.review -->
 
-              <!-- Review 1 -->
-              <div class="review">
-                <!-- <div class="rectangle">
-                  <img src="assets/img/review.jpg" class="img-res" alt="" />
+            <!-- Review 1 -->
+            <div class="review">
+              <!-- <div class="rectangle">
+                  <img loading="lazy" src="assets/img/review.jpg" class="img-res" alt="" />
                 </div> -->
-                <p
-                  class="localization"
-                  data-local="Seit wir unsere neue Anwendung von Mousa erstellen ließen, haben wir gesehen
+              <p class="localization" data-local="Seit wir unsere neue Anwendung von Mousa erstellen ließen, haben wir gesehen
                 eine 200-prozentige Steigerung der Zahl der Online-Kontaktformulare
-                ausgefüllt und an uns zurückgeschickt."
-                >
-                  Since having our new Application built by Mousa, we have seen
-                  a 200% increase in the number of online contact forms being
-                  filled out and returned to us.
-                </p>
-                <div class="review-author"></div>
-                <!-- /.review-author -->
-              </div>
-              <!-- /.review -->
-
-              <div class="review">
-                <p
-                  class="localization"
-                  data-local="Sie haben meine Apps und meine Website entwickelt. Ihre Kommunikation war
-                Gut. Ihr Team hat gut gearbeitet."
-                >
-                  They developed my apps and website. Their communication was
-                  good. Their team worked well.
-                </p>
-                <div class="review-author"></div>
-                <!-- /.review-author -->
-              </div>
-              <!-- /.review -->
-              <div class="review">
-                <p
-                  class="localization"
-                  data-local="Die Zusammenarbeit mit Ihrem Team war eine wirklich tolle Erfahrung. Dank
-                Ihnen für die harte Arbeit und das tolle Ergebnis"
-                >
-                  Was a really great experience working with your team. Thank
-                  you for the hard work and great outcome
-                </p>
-                <div class="review-author"></div>
-                <!-- /.review-author -->
-              </div>
-              <!-- /.review -->
+                ausgefüllt und an uns zurückgeschickt.">
+                Since having our new Application built by Mousa, we have seen
+                a 200% increase in the number of online contact forms being
+                filled out and returned to us.
+              </p>
+              <div class="review-author"></div>
+              <!-- /.review-author -->
             </div>
-            <!-- /.review-carousel -->
-          </div>
-        </div>
-      </section>
-      <!-- /.section-reviews -->
-      <!-- End Reviews section -->
+            <!-- /.review -->
 
-      <!-- Team section -->
-      <section class="site-section section-team" id="team">
-        <div class="container">
-          <div class="wow zoomIn" data-wow-delay="0.2s">
-            <h2 class="localization" data-local="LERNEN SIE MEIN TEAM KENNEN">
-              MEET MY TEAM
-            </h2>
-            <p class="section-subtitle">
-              <span
-                class="localization"
-                data-local="Das ist das Team, das mit mir zusammenarbeitet"
-                >This is the team that is working with me</span
-              >
-            </p>
-          </div>
-
-          <div class="team">
-            <div class="row">
-              <!-- Team Member -->
-              <div class="col-md-3 col-xs-6">
-                <a
-                  href="https://issa-al-halabi.github.io/Issa-Al-Halabi/"
-                  target="_blank"
-                >
-                  <div class="team-member wow zoomIn" data-wow-delay="0.2s">
-                    <div class="flipper">
-                      <div class="team-member-front">
-                        <div class="team-member-thumb">
-                          <img
-                            src="assets/img/issa.png"
-                            class="img-res"
-                            alt=""
-                          />
-                        </div>
-                        <!-- /.team-member-thumb -->
-                        <p class="team-member-front-name">Issa Al-Halabi</p>
-                      </div>
-                      <!-- /.team-member-front -->
-                      <div class="team-member-back">
-                        <div class="team-member-info">
-                          <h3 class="team-member-back-name">Issa Al-Halabi</h3>
-                          <p
-                            class="team-member-back-position localization"
-                            data-local="Flutter Entwickler , Web Entwickler"
-                          >
-                            Flutter Developer , Web Developer
-                          </p>
-                          <p
-                            class="team-member-back-info localization"
-                            data-local="Ich habe bei all meinen Projekten mit ihm zusammengearbeitet
-                          Große Erfahrung auf diesem Gebiet"
-                          >
-                            I Have worked with him on all of my projects He Has
-                            Big Experience In The Field
-                          </p>
-                          <div class="social-icons small">
-                            <a
-                              href="https://www.facebook.com/issa.hlp"
-                              class="rectangle"
-                              target="_blank"
-                            >
-                              <i class="fa-brands fa-square-facebook"></i>
-                            </a>
-                            <a
-                              href="http://wa.me/963946649532"
-                              class="rectangle"
-                              target="_blank"
-                            >
-                              <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                            <a
-                              href="https://www.linkedin.com/in/issa-al-halabi-6700b0247"
-                              class="rectangle"
-                              target="_blank"
-                            >
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a
-                              href="mailto:eesahalabi@gmail.com"
-                              class="rectangle"
-                              target="_blank"
-                            >
-                              <i class="fa fa-envelope"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <!-- /.team-member-back-info -->
-                      </div>
-                      <!-- /.team-member-back -->
-                    </div>
-                  </div>
-                </a>
-                <!-- /.team-member -->
-              </div>
+            <div class="review">
+              <p class="localization" data-local="Sie haben meine Apps und meine Website entwickelt. Ihre Kommunikation war
+                Gut. Ihr Team hat gut gearbeitet.">
+                They developed my apps and website. Their communication was
+                good. Their team worked well.
+              </p>
+              <div class="review-author"></div>
+              <!-- /.review-author -->
             </div>
+            <!-- /.review -->
+            <div class="review">
+              <p class="localization" data-local="Die Zusammenarbeit mit Ihrem Team war eine wirklich tolle Erfahrung. Dank
+                Ihnen für die harte Arbeit und das tolle Ergebnis">
+                Was a really great experience working with your team. Thank
+                you for the hard work and great outcome
+              </p>
+              <div class="review-author"></div>
+              <!-- /.review-author -->
+            </div>
+            <!-- /.review -->
           </div>
-          <!-- /.team -->
+          <!-- /.review-carousel -->
         </div>
-      </section>
-      <!-- /.section-team -->
-      <!-- End Team section -->
+      </div>
+    </section>
+    <!-- /.section-reviews -->
+    <!-- End Reviews section -->
 
-      <!-- Me section -->
-      <section
-        class="section-background section-me background-overlay text-center wow zoomIn"
-        data-wow-delay="0.2s"
-        id="contact"
-      >
-        <div class="container page-scroll">
-          <h2
-            class="localization"
-            data-local="Sind Sie von meiner Arbeit beeindruckt?"
-          >
-            Are You Impressed By My Work?
+    <!-- Team section -->
+    <section class="site-section section-team" id="team">
+      <div class="container">
+        <div class="wow zoomIn" data-wow-delay="0.2s">
+          <h2 class="localization" data-local="LERNEN SIE MEIN TEAM KENNEN">
+            MEET MY TEAM
           </h2>
-          <p
-            class="localization"
-            data-local="Sie können mit mir Leicht Kontaktieren"
-          >
-            You Can Easily Contact With Me
+          <p class="section-subtitle">
+            <span class="localization" data-local="Das ist das Team, das mit mir zusammenarbeitet">This is the team that
+              is working with me</span>
           </p>
-          <a
-            href="mailto:mousahlp@gmail.com"
-            class="btn localization"
-            data-local="IN KONTAKT KOMMEN"
-            target="_blank"
-            >GET IN TOUCH</a
-          >
-          <a
-            href="assets/Mousa_Al_Halabi.pdf"
-            download="Mousa_Al_Halabi"
-            class="btn localization"
-            data-local="mein Lebenslauf"
-            >Download My CV</a
-          >
         </div>
-      </section>
-      <!-- /.section-me -->
-      <!-- End Me section -->
 
-      <!-- Social Networks section -->
-      <section class="section-networks blue-bg">
-        <div class="container">
-          <div class="wow slideInUp" data-wow-delay="0.1s">
-            <a
-              href="https://www.facebook.com/mousa.halapi.7?mibextid=ZbWKwL"
-              class="rectangle"
-              target="_blank"
-            >
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-          </div>
-          <div class="wow slideInUp" data-wow-delay="0.2s">
-            <a
-              href="http://wa.me/963946649532"
-              class="rectangle"
-              target="_blank"
-            >
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-          <div class="wow slideInUp" data-wow-delay="0.3s">
-            <a
-              href="https://www.linkedin.com/in/mousa-al-halabi-9183a9237"
-              target="_blank"
-              class="rectangle"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-          <div class="wow slideInUp" data-wow-delay="0.4s">
-            <a
-              href="mailto:mousahlp@gmail.com"
-              class="rectangle"
-              target="_blank"
-            >
-              <i class="fa fa-envelope"></i>
-            </a>
+        <div class="team">
+          <div class="row">
+            <!-- Team Member -->
+            <div class="col-md-3 col-xs-6">
+              <a href="https://issa-al-halabi.github.io/Issa-Al-Halabi/" target="_blank">
+                <div class="team-member wow zoomIn" data-wow-delay="0.2s">
+                  <div class="flipper">
+                    <div class="team-member-front">
+                      <div class="team-member-thumb">
+                        <img loading="lazy" src="assets/img/issa.jpg" class="img-res" alt="" />
+                      </div>
+                      <!-- /.team-member-thumb -->
+                      <p class="team-member-front-name">Issa Al-Halabi</p>
+                    </div>
+                    <!-- /.team-member-front -->
+                    <div class="team-member-back">
+                      <div class="team-member-info">
+                        <h3 class="team-member-back-name">Issa Al-Halabi</h3>
+                        <p class="team-member-back-position localization"
+                          data-local="Flutter Entwickler , Full-Stack Entwickler">
+                          Flutter Developer , Full-Stack Developer
+                        </p>
+                        <p class="team-member-back-info localization" data-local="Ich habe bei all meinen Projekten mit ihm zusammengearbeitet
+                          Große Erfahrung auf diesem Gebiet">
+                          I Have worked with him on all of my projects He Has
+                          Big Experience In The Field
+                        </p>
+                        <div class="social-icons small">
+                          <a href="https://www.facebook.com/issa.hlp" class="rectangle" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i>
+                          </a>
+                          <a href="http://wa.me/963946649532" class="rectangle" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/issa-al-halabi-6700b0247" class="rectangle"
+                            target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                          </a>
+                          <a href="mailto:eesahalabi@gmail.com" class="rectangle" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- /.team-member-back-info -->
+                    </div>
+                    <!-- /.team-member-back -->
+                  </div>
+                </div>
+              </a>
+              <!-- /.team-member -->
+            </div>
           </div>
         </div>
-      </section>
-      <!-- /.section-networks-->
-      <!-- End Social Networks section -->
-    </main>
-    <!-- /#main -->
-    <!-- End Main content -->
+        <!-- /.team -->
+      </div>
+    </section>
+    <!-- /.section-team -->
+    <!-- End Team section -->
 
-    <!-- Footer -->
-    <footer
-      id="colophon"
-      class="site-footer wow slideInUp"
-      data-wow-delay="0.2s"
-    >
-      <div class="container-fluid">
-        <ul class="list-unstyled list-inline">
-          <li class="page-scroll"><a href="#top">Home</a></li>
-          <li class="page-scroll"><a href="#intro">Intro</a></li>
-          <li class="page-scroll"><a href="#about">About</a></li>
-          <li class="page-scroll"><a href="#companies">Companies</a></li>
-          <li class="page-scroll"><a href="#services">Services</a></li>
-          <li class="page-scroll"><a href="#history">History</a></li>
-          <li class="page-scroll"><a href="#works">Works</a></li>
-          <li class="page-scroll"><a href="#reviews">Reviews</a></li>
-          <li class="page-scroll"><a href="#team">Team</a></li>
-          <li class="page-scroll"><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Me section -->
+    <section class="section-background section-me background-overlay text-center wow zoomIn" data-wow-delay="0.2s"
+      id="contact">
+      <div class="container page-scroll">
+        <h2 class="localization" data-local="Sind Sie von meiner Arbeit beeindruckt?">
+          Are You Impressed By My Work?
+        </h2>
+        <p class="localization" data-local="Sie können mit mir Leicht Kontaktieren">
+          You Can Easily Contact With Me
+        </p>
+        <a href="mailto:mousahlp@gmail.com" class="btn localization" data-local="IN KONTAKT KOMMEN" target="_blank">GET
+          IN TOUCH</a>
+        <a href="assets/cvs/Mousa_Al_Halabi.pdf" download="Mousa_Al_Halabi" class="btn localization"
+          data-local="mein Lebenslauf">Download My CV</a>
+      </div>
+    </section>
+    <!-- End Me section -->
 
-        <div class="page-scroll">
-          <a href="#top" class="rectangle">
-            <i class="fa fa-angle-double-up"></i>
+    <!-- Social Networks section -->
+    <section class="section-networks blue-bg">
+      <div class="container">
+        <div class="wow slideInUp" data-wow-delay="0.1s">
+          <a href="https://www.facebook.com/mousa.halapi.7?mibextid=ZbWKwL" class="rectangle" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </div>
+        <div class="wow slideInUp" data-wow-delay="0.2s">
+          <a href="http://wa.me/963946649532" class="rectangle" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="wow slideInUp" data-wow-delay="0.3s">
+          <a href="https://www.linkedin.com/in/mousa-al-halabi-9183a9237" target="_blank" class="rectangle">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="wow slideInUp" data-wow-delay="0.4s">
+          <a href="mailto:mousahlp@gmail.com" class="rectangle" target="_blank">
+            <i class="fa fa-envelope"></i>
           </a>
         </div>
       </div>
-    </footer>
-    <!-- /#footer -->
-    <!-- End Footer -->
+    </section>
+    <!-- End Social Networks section -->
+  </main>
+  <!-- /#main -->
+  <!-- End Main content -->
 
-    <!-- Modals -->
-    <div id="portfolioItem" class="modal fade fade-scale" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="rectangle" data-dismiss="modal"
-              ><i class="fa fa-times"></i
-            ></a>
-            <img class="img-res" src="" alt="" />
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Project title</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              commodo finibus tristique. Maecenas dignissim condimentum sem eu
-              tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-              urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-              turpis facilisis consectetur quis vel ante. Integer in massa ut
-              nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-              placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor
-              non hendrerit.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn Website" target="_blank"
-              >View Website <i class="fa-solid fa-globe fa-beat"></i
-            ></a>
-            <a href="#" class="btn Github" target="_blank"
-              >Github <i class="fa-brands fa-github fa-beat"></i
-            ></a>
-            <a href="#" class="btn Youtube" target="_blank"
-              >Youtube <i class="fa-brands fa-youtube fa-beat"></i
-            ></a>
-          </div>
-        </div>
-        <!-- /.modal-content -->
+  <!-- Footer -->
+  <footer id="colophon" class="site-footer wow slideInUp" data-wow-delay="0.2s">
+    <div class="container-fluid">
+      <ul class="list-unstyled list-inline">
+        <li class="page-scroll"><a href="#top">Home</a></li>
+        <li class="page-scroll"><a href="#intro">Intro</a></li>
+        <li class="page-scroll"><a href="#about">About</a></li>
+        <li class="page-scroll"><a href="#companies">Companies</a></li>
+        <li class="page-scroll"><a href="#certificates">Education</a></li>
+        <li class="page-scroll"><a href="#history">History</a></li>
+        <li class="page-scroll"><a href="#works">Works</a></li>
+        <li class="page-scroll"><a href="#reviews">Reviews</a></li>
+        <li class="page-scroll"><a href="#team">Team</a></li>
+        <li class="page-scroll"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="page-scroll">
+        <a href="#top" class="rectangle">
+          <i class="fa fa-angle-double-up"></i>
+        </a>
       </div>
-      <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal -->
+  </footer>
+  <!-- /#footer -->
+  <!-- End Footer -->
 
-    <!-- Modals Certificates-->
-    <div
-      id="portfolioItem"
-      class="modal fade fade-scale certificate"
-      role="dialog"
-    >
-      <div class="modal-dialog certificates">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="rectangle" data-dismiss="modal"
-              ><i class="fa fa-times"></i
-            ></a>
-          </div>
-          <div class="modal-body">
-            <h2 class="modal-title">Project title</h2>
-            <div class="certificates-content">
-              <div class="certificate">
-                <div class="certificate-box">
-                  <h4 class="certificate-title">Project title</h4>
-                  <p>cd dvcwed dvdwv dvc</p>
-                </div>
-                <a href="#" class="btn rectangle"
-                  ><span class="localization" data-local="Schau mal"
-                    >View</span
-                  ></a
-                >
+  <!-- Modals -->
+  <div id="portfolioItem" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+          <img loading="lazy" class="img-res" src="" alt="" />
+        </div>
+        <div class="modal-body">
+          <h4 class="modal-title">Project title</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            commodo finibus tristique. Maecenas dignissim condimentum sem eu
+            tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
+            urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
+            turpis facilisis consectetur quis vel ante. Integer in massa ut
+            nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
+            placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor
+            non hendrerit.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn Website" target="_blank">View Website <i class="fa-solid fa-globe fa-beat"></i></a>
+          <a href="#" class="btn Github" target="_blank">Github <i class="fa-brands fa-github fa-beat"></i></a>
+          <a href="#" class="btn Youtube" target="_blank">Youtube <i class="fa-brands fa-youtube fa-beat"></i></a>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- Modals Certificates-->
+  <div id="portfolioItem" class="modal fade fade-scale certificate" role="dialog">
+    <div class="modal-dialog certificates">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-title">Project title</h2>
+          <div class="certificates-content">
+            <div class="certificate">
+              <div class="certificate-box">
+                <h4 class="certificate-title">Project title</h4>
+                <p>cd</p>
               </div>
+              <a href="#" class="btn rectangle"><span class="localization" data-local="Schau mal">View</span></a>
             </div>
           </div>
         </div>
-        <!-- /.modal-content -->
       </div>
-      <!-- /.modal-dialog -->
+      <!-- /.modal-content -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  <!-- JavaScript Libraries -->
+  <script src="assets/lib/jquery/jquery-3.4.1.min.js"></script>
+  <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/lib/wow/wow.min.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/lib/wow/wow.min.js"></script>
+  <!-- jQuery core js | Do not Delete -->
+  <script src="assets/lib/jquery/jquery.min.js"></script>
 
-    <!-- jQuery core js | Do not Delete -->
-    <script src="assets/js/jquery.min.js"></script>
+  <!-- Bootstrap core js | Do not Delete -->
+  <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap core js | Do not Delete -->
-    <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Bootstrap progressbar JS -->
+  <script src="assets/lib/bootstrap/js/bootstrap-progressbar.min.js"></script>
 
-    <!-- Bootstrap progressbar JS -->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+  <!-- Count To JS -->
+  <!-- <script src="assets/lib/jquery/jquery.countTo.min.js"></script> -->
 
-    <!-- Count To JS -->
-    <script src="assets/js/jquery.countTo.min.js"></script>
+  <!-- Easing JS -->
+  <script src="assets/lib/jquery/jquery.easing.min.js"></script>
 
-    <!-- Easing JS -->
-    <script src="assets/js/jquery.easing.min.js"></script>
+  <!-- Shuffle JS -->
+  <script src="assets/lib/jquery/jquery.shuffle.min.js"></script>
 
-    <!-- Shuffle JS -->
-    <script src="assets/js/jquery.shuffle.min.js"></script>
+  <!-- Slick Carousel JS -->
+  <script src="assets/lib/slick/js/slick.min.js"></script>
 
-    <!-- Slick Carousel JS -->
-    <script src="assets/js/slick.min.js"></script>
+  <!-- Touchswipe JS -->
+  <script src="assets/lib/touchswipe/touchswipe.min.js"></script>
 
-    <!-- Touchswipe JS -->
-    <script src="assets/js/touchswipe.min.js"></script>
+  <!-- typed JS -->
+  <script src="assets/lib/typed/typed.min.js"></script>
 
-    <!-- typed JS -->
-    <script src="assets/lib/typed/typed.min.js"></script>
 
-    <!-- MDB -->
-    <!-- <script type="text/javascript" src="assets/lib/mdb/js/mdb.min.js"></script> -->
+  <!-- Custom JS -->
+  <script src="./js/script.js"></script>
+  <script src="./js/localization.js"></script>
+  <!-- <script src="./js/history.js"></script> -->
 
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/localization.js"></script>
-    <script src="assets/js/history.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script src="./js/certificates.js"></script>
+</body>
 
-    <script type="module" src="assets/js/main.js"></script>
-    <script src="assets/js/about.js"></script>
-    <script src="assets/js/appPage.js"></script>
-    <script src="assets/js/certificates.js"></script>
-  </body>
 </html>
