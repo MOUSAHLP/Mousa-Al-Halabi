@@ -485,7 +485,7 @@ const apps = {
       {
         "name": "Google Play",
         "icon": "fa-brands fa-google-play",
-        "link": "https://play.google.com/store/apps/details?id=com.peaklink.absher"
+        "link": "https://play.google.com/store/apps/details?id=com.peaklink.mubashar"
       },
     ],
     "technologies": [
@@ -756,7 +756,7 @@ const apps = {
         icon: "fa-brands fa-youtube",
         link: "https://youtu.be/05hJa3gZr-w",
       },
-      
+
     ],
     "technologies": [
       {
